@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9dabb98b.css",
+    "main.js": "/static/js/main.41a41b3e.js",
+    "static/media/service--traiteur--bg.png": "/static/media/service--traiteur--bg.a4954858e4a23bddc5f9.png",
+    "static/media/hero--bg.png": "/static/media/hero--bg.6163befe091d8af7cefc.png",
+    "static/media/galery-img.png": "/static/media/galery-img.f60ec733a5261dc9b97f.png",
+    "static/media/hero--img.png": "/static/media/hero--img.0df8eb66471f857e67e3.png",
+    "static/media/reservation--img2.png": "/static/media/reservation--img2.1d784dd96a939631ca02.png",
+    "static/media/reservation--img1.png": "/static/media/reservation--img1.856be498c6fe180d6f7f.png",
+    "static/media/contact--row1--bg.png": "/static/media/contact--row1--bg.5a90f638ce024d3ccc74.png",
+    "static/media/apro-1.png": "/static/media/apro-1.d3428ba7bf0b37fb1be9.png",
+    "static/media/apro-3.png": "/static/media/apro-3.c69ca276919e95e8d3b9.png",
+    "static/media/apro-2.png": "/static/media/apro-2.4d85d8b558a07df2fd9b.png",
+    "static/media/logo.png": "/static/media/logo.f373697fe93273c1e655.png",
+    "index.html": "/index.html",
+    "main.9dabb98b.css.map": "/static/css/main.9dabb98b.css.map",
+    "main.41a41b3e.js.map": "/static/js/main.41a41b3e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9dabb98b.css",
+    "static/js/main.41a41b3e.js"
+  ]
+}
