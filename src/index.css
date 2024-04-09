@@ -1,13 +1,595 @@
-body {
+
+
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+/*** HERO SECTION CSS CODE ***/
+.reservation, .contact{
+  margin: 0;
 }
+
+header{
+  display: flex;
+  height: 74px;
+  justify-content: space-evenly;
+  font-size: 1.1em;
+  padding: 0.8em 4em;
+  margin-bottom: 0px;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding: 5px 20px;
+}
+
+header a:hover{
+  color: whitesmoke;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+header .site-logo{
+  margin-right: auto;
+  height: 3.7em;
+  width: 3.6em;
+  margin-top: 0;
+
+}
+
+header nav{
+  margin-top: .9em;
+}
+
+.header--cta{
+  margin: .5em 3.7em;
+  font-size: 1.11em;
+  width: 8.5em;
+  height: 1em;
+  border-radius: 1.1em;
+  padding: .5em 1em;
+  border: 2px solid white;  
+}
+
+.header--cta:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.hero{
+  background-image: url("images/hero--bg.png");
+  background-repeat: no-repeat;
+  height: 96vh;
+}
+
+.hero--info{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin: 0em 4.8em;
+}
+.hero--text{
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+ .hero--image{
+  height: 30em;
+  width: 35em;
+  transform:rotate(0, 1.8, 8.15deg);
+  margin: 0em 0em;
+}
+.hero--cta{
+  width: 8em;
+  height: 1.12em;
+  border-radius: 1em;
+  padding: .5em 1em;
+  background-color: white;
+  color: #EE790D;
+  text-decoration: none;
+  font-size: 1.11em;
+  margin-top: .6em;
+  transition: all;
+  transition-duration: 2ms;
+}
+.hero--cta:hover{
+    /* text-decoration: underline; */
+    font-weight: 500; 
+    font-size: 1.13em;
+    
+}
+
+.hero--cta:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.hero--title{
+  font-size: 3em;
+}
+.hero--details{
+  margin-top: 0em;
+}
+.sub--title{
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-style:italic; 
+}
+.hero--title{
+  margin-bottom: .5em;
+}
+
+/**** CSS CODE FOR APROPOS SECTION BEGINS HERE ****/
+.apropos{
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 3em;
+  height: 480px;
+}
+.apropos--item--wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  /* margin-bottom: 3em; */
+}
+
+.apropos--item--title{
+  color: #F93A47;
+}
+
+.apropos--title--design1{
+  color:#F93A47 ;
+  font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-style:italic; 
+}
+
+.apropos--title--design2{
+  color: #F93A47;
+}
+
+.apropos--item--image{
+  height: 9em;
+  width: 7em;
+  margin-top: 2em;
+}
+
+/*** SERVICE TRAITEUR CSS CODE ***/
+
+.service--traiteur{
+  text-align: center;
+  margin-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-image: url("images/service--traiteur--bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service--traiteur--title--design1{
+  color: #F93A47;
+  font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-style:italic; 
+}
+.service--traiteur--title--design2{
+  color: #F93A47;
+}
+.service--traiteur--item--wrapper{
+  margin-top: 4em;
+  margin-left: 6em;
+  margin-right: 6em;
+
+}
+.service--traiteur--item--row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.service--traiteur--item{
+  width: 470px;
+  height: 220px;
+  background-color: white;
+  display: flex;
+  padding: 1em 1.5em;
+  gap: 2em;
+  justify-content: space-between;
+  border-radius: 2em;
+}
+
+.service--traiteur--item--img{
+  height: 15em;
+  width: 16em;
+  transform:rotate(0, 1.8, 8.15deg);
+  transition: all;
+  transition-duration: 60ms;
+}
+
+.service--traiteur--item--img:hover{
+  /* animation: enlarge 800ms; */
+  transform: scale(1.5);
+}
+.service--traiteur--item--title{
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-style:italic; 
+  font-size: 1.5em;
+  margin-top: .1em;
+}
+.service--traiteur--item--units{
+  color: #F93A47;
+}
+.service--traiteur--item--info{
+  margin-left: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.service--traiteur--item--text{
+  margin-top: 0.4em;
+}
+.service--traiteur--item--title{
+  margin-bottom: 0em;
+}
+.service--traiteur--item--qty{
+  margin-bottom: 0em;
+}
+.service--traiteur--item--units{
+  margin-top: 0.2em;
+}
+.service--traiteur--item--cta{
+  width: 5.5em;
+  height: 1.3em;
+  padding: .5em .8em;
+  color: white;
+  text-decoration: none;
+  background-color: #F93A47;
+  border-radius: .8em;
+
+}
+
+.service--traiteur--item--cta:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/**** CSS CODE FOR MENU OR GALERY *****/
+.galery{
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.galery--title--design1{
+  color: #F93A47;
+  font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-style:italic
+
+}
+.galery--title--design2{
+  color: #F93A47;
+
+}
+.galery-img{
+  height: 25em;
+  width: 48em;
+  margin: 1em auto;
+}
+
+/**** CSS CODE FOR RESERVATION *****/
+.reservation{
+  background-image: url("images/service--traiteur--bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 620px;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 7em;
+  
+}
+/* .reservation--info{
+  height: 20em;
+
+} */
+
+.reservation--info--title--design1{
+  color: #F93A47;
+  line-height: 43.2px;
+  font-weight: 700;
+  font-family: "Pacifico", cursive;
+  font-style:italic;
+
+}
+.reservation--info--title--design2{
+  color: #F93A47;
+  
+}
+.reservation--info--imgs{
+  margin-top: 1em;
+  position: relative;
+ 
+}
+
+.reservation--img1{
+  width: 275.01px;
+  height: 394.99px;
+  position: relative;
+  top: 1em;
+  left: .3em;
+  gap: 0px;
+  opacity: 0px;
+ 
+}
+
+
+.reservation--img2{
+  width: 275.01px;
+  height: 394.4px;
+  position: absolute;
+  top: .8em;
+  left: .6em;
+  gap: 0px;
+  opacity: 0px;
+
+}
+.reservation--form{
+  height: 33.5em;
+  width: 22em;
+  border-radius: 2em;
+  margin-top: 1.2em;
+  background-color: white;
+  padding-block: 2em ;
+  padding-inline: 2em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2.98256px 7.4546px 1px rgba(0, 0, 0, 0.2);
+}
+.reservation--form > div{
+  margin-top: .8em;
+  margin-bottom: .8em;
+  color: #888888;;
+}
+
+.reservation--form > div > input{
+  border-radius: .6em;
+  width: 22em;
+  font-size: .8em;
+  line-height: 2px;
+  padding: .6em .8em;
+  height: 2.5em;
+  border: 1px solid #888888;
+  cursor: pointer;
+}
+
+.reservation--form > div > select{
+  border-radius: .6em;
+  width: 22em;
+  font-size: .8em;
+  line-height: 2px;
+  padding: .8em 1em;
+  height: 3em;
+  border: 1px solid #888888;
+  cursor: pointer;
+}
+.reservation--form > div > select, option{
+   color: #888888;
+}
+
+.reservation--form > div > textarea{
+  height: 4.8em;
+  width: 22em;
+  line-height: 4px;
+  border-radius: .6em;
+  padding: 1.2em 1em;
+  border: 1px solid #888888;
+  cursor: pointer;
+}
+
+.reservation--form > div > input, select, option, textarea:focus{
+  color: #000000;
+}
+.reservation--form > div > input, select, option, textarea:valid{
+  color: #000000;
+}
+.reservation--form > button{
+  height: 2.5em;
+  width: 22em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5em 1em;
+  border-radius: .6em;
+  background-color: #E51826;
+  border: none;
+  color: white;
+  margin-top: .2em;
+}
+
+.reservation--form > button:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.reservation--form > div > label{
+  font-size: .8em;
+  color: black;
+  position: absolute;
+  transform: translateY(-50%);
+  margin-top: -7px;
+  background: white;
+  padding-left: .1em;
+  padding-right: .1em;
+  transform: translateX(40%);
+
+}
+
+/**** CSS FOR CONTACT ****/
+.contact{
+  height: 490px;
+}
+.contact--row1{
+  display: flex;
+  gap: 4em;
+  background-image: url("images/contact--row1--bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+  height: 68px;
+  padding: 2.5em 5em;
+  justify-content: space-between;
+}
+.contact--row1--info{ 
+  margin-top: .5em;
+  display: flex;
+  gap: .6em;
+}
+.contact--row1--info--img{
+  height: 50px;
+  width: 50px;
+  margin-top: .5em;
+}
+
+.contact--row1--form{
+  display: flex;
+  gap: 1.6em;
+  margin-top: 1.2em;
+}
+
+.contact--row1--form > input{
+  width: 18em;
+  height: 2.8em;
+  border-radius: .6em;
+  padding: .2em 1em;
+  color: #888888;
+  border: 1px solid #000000;
+}
+
+.contact--row1--form > input:focus{
+  color: black;
+  
+}
+.contact--row1--form > button{
+  width: 10em;
+  height: 3em;
+  color: white;
+  background-color: #E51826;
+  border-radius: .6em;
+  border: none;
+  padding: .4em .6em;
+}
+
+.contact--row1--form > button:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+
+.contact--row2{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #A1131D;
+  color: white;
+  padding-bottom: 1cqh;
+  
+}
+
+.contact--row2--col5,
+.contact--row2--col2,
+.contact--row2--col3,
+.contact--row2--col4{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+
+.contact--row2--col1--phone,
+.contact--row2--col1--email,
+.contact--row2--col1--FAQ{
+  display: flex;
+  gap: 1em;
+  border: 1px solid #FFFFFF;
+  padding: 0em .7em;
+  margin-bottom: .7em;
+  border-radius: .7em;
+}
+
+.contact--row2--col1--phone--img,
+.contact--row2--col1--email--img,
+.contact--row2--col1--FAQ--img{
+  height: 1.2em;
+  width: 1.3em;
+  margin-top: 1em;
+}
+.contact--row2--col1--phone--img{
+  margin-top: 1.7em;
+}
+
+
+.contact--row2--col1--title,
+.contact--row2--col2--title,
+.contact--row2--col3--title,
+.contact--row2--col4--title,
+.contact--row2--col5--title{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 1em;
+}
+.contact--row2--col2--title{
+  margin-right: 4em;
+}
+
+.contact--row2--col2--list,
+.contact--row2--col3--list,
+.contact--row2--col4--list{
+   list-style: none;
+   margin-top: .1em;
+   display: flex;
+   flex-direction: column;
+   gap: .1em;
+   align-items: normal;
+}
+
+.contact--row2--col5--img{
+  display: flex;
+  gap: .6em;
+}
+.col5--img1,
+.col5--img2,
+.col5--img3{
+   height: 1.3em;
+   width: 1.3em;
+}
+
+.contact--row3{
+  display: flex;
+  background-color: #FFFFFF;
+  height: 50px;
+  justify-content: space-evenly;
+  gap: 4em;
+}
+.contact--row3--img{
+  height: 2.4em;
+  width: 2.4em;
+  margin-top: .5em;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
