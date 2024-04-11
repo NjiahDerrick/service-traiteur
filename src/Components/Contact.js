@@ -57,8 +57,8 @@ export default function  Contact() {
               </div>
 
               <div className="contact--row2--col2">
-                <h5 className="contact--row2--col2--title">À propos</h5>
                 <ul className="contact--row2--col2--list">
+                  <li className="contact--row2--col2--title">À propos</li>
                   <li>Gamelles Gourmandes</li>
                   <li>Notre histoire</li>
                   <li>Nos engagements RSE</li>
@@ -68,8 +68,8 @@ export default function  Contact() {
               </div>
 
               <div className="contact--row2--col3">
-                <h5 className="contact--row2--col3--title">Nos Produits</h5>
                 <ul className="contact--row2--col3--list">
+                  <li className="contact--row2--col3--title">Nos Produits</li>
                   <li>Poulets</li>
                   <li>Poissons</li>
                   <li>Porc</li>
@@ -81,8 +81,9 @@ export default function  Contact() {
 
               
               <div className="contact--row2--col4">
-                <h5 className="contact--row2--col4--title">Nos Deserts</h5>
+                
                 <ul className="contact--row2--col4--list">
+                <li className="contact--row2--col4--title">Nos Deserts</li>
                   <li>Yaourt</li>
                   <li>Glaces</li>
                   <li>Jus de fruits</li>
