@@ -83,7 +83,7 @@ export default function Reservation() {
           <div>
                 <label htmlFor="description" className="description--label">Description</label>
                 <textarea 
-                      placeholder='Dit nous plus sur votre événement'
+                      placeholder='Dit nous plus sur votre événement '
                       name='description'
                       className='description'
                       id='description'

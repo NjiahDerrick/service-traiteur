@@ -614,44 +614,75 @@ header nav{
   .hero--image{
     display: none;
   }
+  .hero--info{
+    transform: scale(.8);
+    width: 30%;
+  }
   .apropos--item{
-    width: 100%;
+    max-width: 100%;
   }
-  .service--traiteur{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .service--traiteur--item--wrapper{}
+
+
   .service--traiteur--item--row{
     display: flex;
     flex-direction: column;
     gap: .7em;
-    width: 100%;
-    padding-right: 6em;
+    padding-left: 1em;
+    padding-right: 1em;
     align-items: center;
   }
   .service--traiteur--item{
-    width: 23em;
+    max-width: 17em;
     margin-bottom: 2em;
-    gap: 1em;
-    margin-left: .2em;
+    gap: .6em;
+    max-height: 18em;
+    
+    /* margin-left: .2em; */
   }
-
+  .shawama{
+    font-size: 1em;
+  }
+  /* .service--traiteur--item--info{
+    max-height: ;
+  } */
   .service--traiteur--item--img{
-    width: 52%;
-    height: 10em;
+    min-width: 52%;
+    min-height: 10em;
+  }
+  .service--traiteur--item--title,
+  .service--traiteur--item--text,
+  .service--traiteur--item--qty,
+  .service--traiteur--item--units{
+    transform: scale(.8);
+  }
+  .service--traiteur--item--title{
+    margin-bottom: 0em;
+  }
+  .service--traiteur--item--text{
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  .service--traiteur--item--qty{
+    margin-top: .3em;
+    margin-bottom: 0em;
+  }
+  .service--traiteur--item--units{
+    margin-top: .1em;
+    margin-bottom: 0em;
+  }
+  .service--traiteur--item--cta{
+    transform: scale(.8);
+    margin-top: .2em;
   }
   
   
-  .hero,
-  .contact{
-    width: 100%;
+  .hero{
+    max-width: 100%;
     display: flex;
     flex-direction: column;
   }
   .apropos{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 65em;
@@ -659,39 +690,64 @@ header nav{
   .apropos--item--wrapper{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
   }
 
 
   .galery{
-    width: 100%;
-    margin-bottom: 2em;
+    max-width: 100%;
+    margin-bottom: 30em;
   }
   .galery-img{
-    width: 90%;
+    max-width: 90%;
     height: 14em;
   }
   .reservation{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 0em;
+    margin-bottom: 20em;
     margin-top: 0em;
     padding-left: 2em;
     gap: 1.5em;
-    height: 77em;
+    max-height: 77em;
   }
   .reservation--info{
      margin-bottom: 1em;
      margin-top: 0em;
-     width: 80%;
+     max-width: 80%;
      margin-left: 2em;
   }
   .reservation--form{
     margin-top: 0em;
-    width: 70%;
+    max-width: 67%;
     margin-left: .5em;
     margin-bottom: .8em;
+    font-size: 1em;
+    padding-right: 2em;
+  }
+  .reservation--form > div > input, select, option, textarea{
+    max-width: 18em;
+  }
+  .reservation--form > div > select, option, textarea{
+    max-width: 18em;
+  }
+  .reservation--form > div > textarea{
+    max-width: 18em;
+    text-wrap: wrap;
+    line-height: 1.2em;
+  }
+  .reservation--form > button{
+    max-width: 18em;
+  }
+  /* .reservation--form > div > input, select, option, textarea{
+    width: 20%;
+  } */
+  .description{
+    width: 10%;
+  }
+  .contact{
+    /* max-width: 100%; */
   }
 
   .contact--row1{
@@ -699,10 +755,12 @@ header nav{
     flex-direction: column;
     margin-bottom: 0em;
     gap: .4em;
-    height: 20em;
+    max-height: 20em;
+    /* width: 100%; */
+    
   }
   .contact--row1--info{
-    width: 100%;
+    max-width: 70%;
     
   }
   .contact--row1--form{
@@ -710,17 +768,19 @@ header nav{
     flex-direction: column;
     gap: .4em;
     margin-top: .1em;
+    max-width: 70%;
   }
   .contact--row2{
     display: flex;
     flex-direction: column;
     gap: .4em;
-    width: 100%;
+    /* width: 100%; */
     padding-left: 3em;
+ 
     
   }
   .contact--row2--col1{
-    width: 45%;
+    max-width: 45%;
     margin-left: 2.5em;
 
   }
@@ -728,7 +788,7 @@ header nav{
   .contact--row2--col3,
   .contact--row2--col4,
   .contact--row2--col5{
-    width: 30%;
+    max-width: 40%;
     /* margin-right: auto; */
     justify-content: left;
   }
@@ -739,6 +799,7 @@ header nav{
     gap: .4em;
     margin-bottom: .4em;
     flex-wrap: wrap;
+    max-width: 67%;
   }
 
 
