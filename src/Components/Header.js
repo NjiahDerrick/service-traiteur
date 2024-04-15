@@ -22,7 +22,7 @@ export default function Header() {
                 <header id='header'>
                     <img src={logo} alt="logo image of CM Chicken" className='site-logo'/>
                     <nav class="topnav" id="myTopnav">
-                        <Link to="#apropos" smooth>À propos new</Link>
+                        <Link to="#apropos" smooth>À propos</Link>
                         <Link to="#servicetraiteur" smooth>Service Traiteur</Link> 
                         <Link to="#menu" smooth>Galery</Link>
                         <Link to="#reservation" smooth>Réservation</Link>
