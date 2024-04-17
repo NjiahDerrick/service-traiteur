@@ -6,7 +6,7 @@ import itemImg from "../images/hero--img.png"
 export default function ServiceTraiteur() {
   return (
     <BrowserRouter>
-         <section id='servicetraiteur' className='service--traiteur'>
+         <section id='servicetraiteur' className='service--traiteur container'>
           <h1 className="service--traiteur--title">
             Le menu <span className="service--traiteur--title--design1">fast-food</span> mais
             <br />en plus <span className="service--traiteur--title--design2"> GRAND !</span>

@@ -10,14 +10,14 @@ import FaqImg from "../images/faq.png"
 
 export default function  Contact() {
   return (
-    <section id='contact' className='contact'>
+    <section id='contact' className='contact container'>
         <div className="contact--row1">
               <div className="contact--row1--info">
                 <img src={row1Img} alt="" className="contact--row1--info--img" />
                 <p className="contact--row1--info--text">
                   Insrivez-vous en 1 click et effectuer<br />
                   vos commandes plus rapidement.
-                </p>
+                </p> 
               </div>
               <form className="contact--row1--form">
                 <input 

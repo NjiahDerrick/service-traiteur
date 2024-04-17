@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
        <BrowserRouter>
-           <section className="hero">
+           <section className="hero container">
                 <header id='header'>
                     <img src={logo} alt="logo image of CM Chicken" className='site-logo'/>
                     <nav class="topnav" id="myTopnav">
