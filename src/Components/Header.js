@@ -12,13 +12,25 @@ export default function Header() {
     } else {
       x.className = "topnav";
     }
-  }   
+  }  
 
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
+
+  React.useEffect(() => {
+    function watchWidth() {
+        setWindowWidth(window.innerWidth)
+    }
+     window.addEventListener("resize", watchWidth)
+
+     return function() {
+        window.removeEventListener("resize", watchWidth)
+       }
+   }, [])
 
 
   return (
        <BrowserRouter>
-           <section className="hero container">
+           <section className="hero">
                 <header id='header'>
                     <img src={logo} alt="logo image of CM Chicken" className='site-logo'/>
                     <nav class="topnav" id="myTopnav">
@@ -47,6 +59,7 @@ export default function Header() {
                     </div>
                     <img src={heroImage} alt="hero image of section" className="hero--image" />
                 </div>
+                <h1>Window width: {window.innerWidth}</h1>
           </section>
        
        </BrowserRouter>

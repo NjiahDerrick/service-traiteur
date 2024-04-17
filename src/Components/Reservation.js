@@ -4,7 +4,7 @@ import Img2 from "../images/reservation--img2.png"
 
 export default function Reservation() {
   return (
-    <section id='reservation' className='reservation container'>
+    <section id='reservation' className='reservation'>
       <div className="reservation--info">
         <h1 className="reservation--info--title">
           Vous <span className="reservation--info--title--design1">Réserver</span> et nous<br />

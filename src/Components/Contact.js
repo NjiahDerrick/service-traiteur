@@ -10,7 +10,7 @@ import FaqImg from "../images/faq.png"
 
 export default function  Contact() {
   return (
-    <section id='contact' className='contact container'>
+    <section id='contact' className='contact'>
         <div className="contact--row1">
               <div className="contact--row1--info">
                 <img src={row1Img} alt="" className="contact--row1--info--img" />

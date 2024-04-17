@@ -3,7 +3,7 @@ import galeryImg from "../images/galery-img.png"
 
 export default function Menu() {
   return (
-    <section id='menu' className='galery container'>
+    <section id='menu' className='galery'>
            <h1 className="galery--title">
              Un événement avec<br />
              <span className="galery--title--design1">traiteur</span> c'est un<br />

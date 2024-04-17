@@ -6,7 +6,7 @@ import img4 from "../images/apro-4.png"
 
 export default function Apropos() {
   return (
-    <section id='apropos' className='apropos container'>
+    <section id='apropos' className='apropos'>
         <h1 className="apropos--title">
           Un <span className="apropos--title--design1">fast-food</span> dynamique et
           <br />de <span className="apropos--title--design2"> Qualité !</span>
