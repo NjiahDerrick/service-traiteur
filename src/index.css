@@ -594,9 +594,17 @@ header nav{
   
 }
 
-/*** Responsive for Hero section begins here ****/
+/* ** Responsive for Hero section begins here ****/
 
-.topnav .icon {
+
+
+
+
+
+
+
+
+/* .topnav .icon {
   display: none;
 }
 
@@ -613,7 +621,7 @@ header nav{
     width: 60em;
     font-size: .8em;
   } */
-  .hero--image{
+  /* .hero--image{
     display: none;
   }
   .hero--info{
@@ -640,14 +648,14 @@ header nav{
     max-height: 18em;
     
     /* margin-left: .2em; */
-  }
+  /* }
   .shawama{
     font-size: 1em;
-  }
+  } */
   /* .service--traiteur--item--info{
     max-height: ;
   } */
-  .service--traiteur--item--img{
+  /* .service--traiteur--item--img{
     min-width: 52%;
     min-height: 10em;
   }
@@ -741,26 +749,26 @@ header nav{
   }
   .reservation--form > button{
     max-width: 18em;
-  }
+  } */
   /* .reservation--form > div > input, select, option, textarea{
     width: 20%;
-  } */
-  .description{
+  /* } */
+  /* .description{
     width: 10%;
   }
-  .contact{
+  .contact{  */
     /* max-width: 100%; */
-  }
+  /* }
 
   .contact--row1{
     display: flex;
     flex-direction: column;
     margin-bottom: 0em;
     gap: .4em;
-    max-height: 20em;
+    max-height: 20em; */
     /* width: 100%; */
     
-  }
+  /* }
   .contact--row1--info{
     max-width: 70%;
     
@@ -775,9 +783,9 @@ header nav{
   .contact--row2{
     display: flex;
     flex-direction: column;
-    gap: .4em;
+    gap: .4em; */
     /* width: 100%; */
-    padding-left: 3em;
+    /* padding-left: 3em;
  
     
   }
@@ -790,9 +798,9 @@ header nav{
   .contact--row2--col3,
   .contact--row2--col4,
   .contact--row2--col5{
-    max-width: 40%;
+    max-width: 40%; */
     /* margin-right: auto; */
-    justify-content: left;
+    /* justify-content: left;
   }
   
   .contact--row3{
@@ -807,9 +815,9 @@ header nav{
 
 
 
-}
+}   */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -821,8 +829,8 @@ header nav{
     display: block;
     text-align: left;
   }
-}
-
+} */
+ 
 
 
 
