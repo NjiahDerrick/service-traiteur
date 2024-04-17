@@ -25,6 +25,7 @@ header{
 header a{
   text-decoration: none;
   color: white;
+  /* font-size: 1.1em; */
   font-weight: 400;
   padding: 5px 20px;
 }
@@ -453,6 +454,11 @@ header nav{
   display: flex;
   gap: .6em;
 }
+.contact--row1--info--text{
+  /* font-size: .3em; */
+  display: block;
+  /* width: 4em; */
+}
 .contact--row1--info--img{
   height: 50px;
   width: 50px;
@@ -596,29 +602,153 @@ header nav{
 
 /* ** Responsive for Hero section begins here ****/
 
-  /* 2xl */
+  
   @media (max-width: 1536px) {
-   
+    /* .container {
+    max-width: 1280px;
+    } */
   }
-  /* xl */
+  
   @media (max-width: 1280px) {
-   
-  }
-  /* lg */
-  @media (max-width: 1024px) {
-   
-  }
-  /* md */
-  @media (max-width: 768px) {
+    /* .container {
+    max-width: 1024px;
+    } */
     
   }
-  /* sm */
-  @media (max-width: 640px) {
-   
+  @media (max-width: 1124px) {
+    /* .container {
+    max-width: 1024px;
+    } */
+    .service--traiteur--item{
+      max-width: 350px;
+      gap: 1em;
+    }
+    .service--traiteur--item--row{
+      margin-left: auto;
+    }
+    .service--traiteur--item--wrapper{
+      margin-left: 5em;
+      margin-right: 5em;
+    }
+    .service--traiteur--item--qty{
+      margin-top: .1em;
+      font-size: .9em;
+    }
+    .service--traiteur--item--title{
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+    .service--traiteur--item--text{
+      font-size: .9em;
+
+    }
+    .service--traiteur--item--units{
+      margin-top: .1em;
+      font-size: 1em;
+      margin-bottom: 0px;
+    }
+    .service--traiteur--item--cta{
+      transform: scale(.9);
+      margin-top: .4em;
+    }
+    .service--traiteur--item--img{
+      transform: scale(.8);
+    }
+    .service--traiteur--item--img:hover{
+      transform: scale(1.2);
+    }
+    header a{
+      text-decoration: none;
+      color: white;
+      /* font-size: 1.1em; */
+      font-weight: 400;
+      padding: 3px 15px;
+    }
+    header nav{
+      margin-left: .3em;
+    }
+    .header--cta{
+      margin-left: .1em;
+      width: 4em;
+      font-size: 1em;
+    }
+    .hero--title{
+      font-size: 2.5em;
+    }
+    .hero--image{
+     transform: scale(.8);
+     margin-top: 0em;
+    }
+    .hero{
+      height: 86vh;
+    }
+    .contact--row1{
+      height: 3em;
+    }
+    .contact--row1--info{ 
+      margin-top: .5em;
+      display: flex;
+      gap: .6em;
+    }
+    .contact--row1--info--text{
+      font-size: .3em;
+      display: flex;
+      width: 4em;
+    }
+    .contact--row1--info--img{
+      height: 40px;
+      width: 40px;
+      margin-top: .5em;
+    }
+    
+    .contact--row1--form{
+      display: flex;
+      gap: 1.6em;
+      margin-top: 1.2em;
+    }
+    
+    .contact--row1--form > input{
+      transform: scale(.8);
+     
+    }
+    .contact--row1--form > button{
+    transform: scale(.8);
+    }
+    
   }
-  /* xs */
-  @media (max-width: 475px) {
   
+  @media (max-width: 1024px) {
+    /* .container {
+    max-width: 768px;
+    } */
+    .service--traiteur--item{
+      max-width: 400px;
+    }
+    .service--traiteur--item--row{
+      margin-left: auto;
+    }
+    .service--traiteur--item--wrapper{
+      margin-left: 3em;
+      margin-right: 3em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* .container {
+    max-width: 640px;
+    } */
+  }
+  
+  @media (max-width: 640px) {
+    /* .container {
+    max-width: 475px;
+    } */
+  }
+  
+  @media (max-width: 475px) {
+    /* .container {
+    width: 100%;
+    } */
   }
 
 

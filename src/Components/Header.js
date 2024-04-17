@@ -39,11 +39,11 @@ export default function Header() {
                         <Link to="#menu" smooth>Galery</Link>
                         <Link to="#reservation" smooth>Réservation</Link>
                         <Link to="#contact" smooth>Contact</Link>
+                        <Link className="header--cta" to="#reservation" smooth>Reservez Maintenant</Link> 
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                           <i class="fa fa-bars"></i>
                         </a> 
-                    </nav>
-                    <Link className="header--cta" to="#reservation" smooth>Reservez Maintenant</Link> 
+                    </nav>    
                 </header>
                 <div className="hero--info">
                   <div className="hero--text">
