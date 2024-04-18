@@ -3,17 +3,24 @@ import { BrowserRouter } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hashlink'
 import logo from "../images/logo.png"
 import heroImage from "../images/hero--img.png"
+import { useRef, useState } from 'react'
 
 export default function Header() {
-  function myFunction() {
-    const x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }  
+    const handleblock = useRef()
+    const [statehamber,setStatehamber] = useState(false)
 
+    const actionhamber = ()=>{
+        handleblock.current.style.transform = "translateX(-2%)";
+        setStatehamber(true)
+    }
+
+  
+    const closeHamber = ()=>{
+        handleblock.current.style.transform = "translateX(-103%)";
+        setStatehamber(false)
+    } 
+
+    // Window tracker begins here
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
 
   React.useEffect(() => {
@@ -31,20 +38,51 @@ export default function Header() {
   return (
        <BrowserRouter>
            <section className="hero">
-                <header id='header'>
+                <header id='header' className='hero-navigation'>
                     <img src={logo} alt="logo image of CM Chicken" className='site-logo'/>
-                    <nav class="topnav" id="myTopnav">
+                    <nav className="hero-nav">
                         <Link to="#apropos" smooth>À propos</Link>
                         <Link to="#servicetraiteur" smooth>Service Traiteur</Link> 
                         <Link to="#menu" smooth>Galery</Link>
                         <Link to="#reservation" smooth>Réservation</Link>
                         <Link to="#contact" smooth>Contact</Link>
                         <Link className="header--cta" to="#reservation" smooth>Reservez Maintenant</Link> 
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                          <i class="fa fa-bars"></i>
-                        </a> 
-                    </nav>    
+                    </nav>
+                    <div className='hamburger'>
+                        {statehamber ? 
+                            <svg xmlns="http://www.w3.org/2000/svg" onClick={closeHamber} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hambericon">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+                          
+                            : 
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"  onClick={actionhamber} className="hambericon">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                            </svg>
+                        } 
+                      </div>   
                 </header>
+                                
+                <div className='menuhamber' ref={handleblock}>
+                  <div className='closesection'>
+                  
+                      <img src={logo} alt="logo image of CM Chicken" className='site-logo'/>
+                      <div className="centerclose"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" onClick={closeHamber} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="iconhamberclose">
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+                      </div>
+                  </div>  
+                  <nav className='listlinkhamburger'>
+                        <Link to="#apropos" smooth>À propos</Link>
+                        <Link to="#servicetraiteur" smooth>Service Traiteur</Link> 
+                        <Link to="#menu" smooth>Galery</Link>
+                        <Link to="#reservation" smooth>Réservation</Link>
+                        <Link to="#contact" smooth>Contact</Link>
+                        <Link className="header--cta" to="#reservation" smooth>Reservez Maintenant</Link> 
+                  </nav>
+
+                </div>
+
                 <div className="hero--info">
                   <div className="hero--text">
                       <h1 className="hero--title">
