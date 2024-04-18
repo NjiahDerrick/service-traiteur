@@ -648,6 +648,10 @@ header nav{
       
       .contact--row1{
         height: 3em;
+        /* padding: 2.5em 5em; */
+        padding-left: 3em;
+        padding-right: 3em;
+        gap: 2em;
       }
       .contact--row1--info{ 
         margin-top: .5em;
@@ -715,15 +719,36 @@ header nav{
     
   }
 
-
-
-  @media (max-width: 993px){
+  @media (max-width: 994px){
+    header{
+      font-size: 1em;
+      padding: 0.8em 4em;
+      margin-bottom: 0px;
+    }
     header .site-logo{
-      height: 3em;
-      width: 3em;
+      height: 2.8em;
+      width: 2.8em;
     
     }
+    header a{
+      text-decoration: none;
+      color: white;
+      /* font-size: 1.1em; */
+      font-weight: 400;
+      padding: .3em 1em;
+    }
+    .header--cta{
+      margin-left: .1em;
+      width: 3em;
+    }
     
+  }
+  @media (max-width: 968px){
+    .contact--row1{
+      gap: 2em;
+      /* padding: 2.5em 5em; */
+    }
+
   }
   
   @media (max-width: 768px) {

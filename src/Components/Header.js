@@ -48,7 +48,7 @@ export default function Header() {
                 <div className="hero--info">
                   <div className="hero--text">
                       <h1 className="hero--title">
-                          CM Chicken <br />
+                          <span>CM Chicken</span> <br />
                           <span className="sub--title">Service traiteur</span> 
                       </h1>
                       <p className="hero--details">
