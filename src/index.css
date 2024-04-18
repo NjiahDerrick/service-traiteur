@@ -735,7 +735,7 @@ header nav{
       color: white;
       /* font-size: 1.1em; */
       font-weight: 400;
-      padding: .3em 1em;
+      padding: .3em .7em;
     }
     .header--cta{
       margin-left: .1em;
