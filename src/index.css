@@ -602,23 +602,8 @@ header nav{
 
 /* ** Responsive for Hero section begins here ****/
 
-  
-  @media (max-width: 1536px) {
-    /* .container {
-    max-width: 1280px;
-    } */
-  }
-  
-  @media (max-width: 1280px) {
-    /* .container {
-    max-width: 1024px;
-    } */
-    
-  }
-  @media (max-width: 1124px) {
-    /* .container {
-    max-width: 1024px;
-    } */
+
+  @media (max-width: 1246px){
     .service--traiteur--item{
       max-width: 350px;
       gap: 1em;
@@ -649,7 +634,8 @@ header nav{
     }
     .service--traiteur--item--cta{
       /* transform: scale(.9); */
-      max-width: ;
+      width: 5.5em;
+      height: 1.3em;
       margin-top: .4em;
     }
     .service--traiteur--item--img{
@@ -658,6 +644,47 @@ header nav{
     .service--traiteur--item--img:hover{
       transform: scale(1.2);
     }
+
+      
+      .contact--row1{
+        height: 3em;
+      }
+      .contact--row1--info{ 
+        margin-top: .5em;
+        display: flex;
+        gap: .6em;
+      }
+      .contact--row1--info--text{
+        font-size: 1em;
+        display: flex;
+        width: 16em;
+        height: 5em;
+        margin-top: .4em;
+      }
+      .contact--row1--info--img{
+        height: 42px;
+        width: 42px;
+        margin-top: .5em;
+      }
+      
+      .contact--row1--form{
+        display: flex;
+        gap: 1em;
+        margin-top: 1.2em;
+      }
+      
+      .contact--row1--form > input{
+        /* transform: scale(.8); */
+        max-width: 12em;
+      }
+      .contact--row1--form > button{
+      /* transform: scale(.8); */
+      max-width: 7em;
+      }
+
+  }
+
+  @media (max-width: 1138px) {
     header a{
       text-decoration: none;
       color: white;
@@ -685,59 +712,18 @@ header nav{
     .hero{
       height: 86vh;
     }
-    .contact--row1{
-      height: 3em;
-    }
-    .contact--row1--info{ 
-      margin-top: .5em;
-      display: flex;
-      gap: .6em;
-    }
-    .contact--row1--info--text{
-      font-size: 1em;
-      display: flex;
-      width: 16em;
-      height: 5em;
-      margin-top: .4em;
-    }
-    .contact--row1--info--img{
-      height: 42px;
-      width: 42px;
-      margin-top: .5em;
-    }
-    
-    .contact--row1--form{
-      display: flex;
-      gap: 1em;
-      margin-top: 1.2em;
-    }
-    
-    .contact--row1--form > input{
-      /* transform: scale(.8); */
-      max-width: 12em;
-     
-    }
-    .contact--row1--form > button{
-    /* transform: scale(.8); */
-    max-width: 7em;
-    }
     
   }
-  
-  @media (max-width: 1024px) {
-    /* .container {
-    max-width: 768px;
-    } */
-    .service--traiteur--item{
-      max-width: 400px;
+
+
+
+  @media (max-width: 993px){
+    header .site-logo{
+      height: 3em;
+      width: 3em;
+    
     }
-    .service--traiteur--item--row{
-      margin-left: auto;
-    }
-    .service--traiteur--item--wrapper{
-      margin-left: 3em;
-      margin-right: 3em;
-    }
+    
   }
   
   @media (max-width: 768px) {
