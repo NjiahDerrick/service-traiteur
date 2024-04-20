@@ -20,19 +20,7 @@ export default function Header() {
         setStatehamber(false)
     } 
 
-    // Window tracker begins here
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
 
-  React.useEffect(() => {
-    function watchWidth() {
-        setWindowWidth(window.innerWidth)
-    }
-     window.addEventListener("resize", watchWidth)
-
-     return function() {
-        window.removeEventListener("resize", watchWidth)
-       }
-   }, [])
 
 
   return (
@@ -41,7 +29,7 @@ export default function Header() {
                 <header id='header' className='hero-navigation'>
                     <img src={logo} alt="logo image of CM Chicken" className='site-logo'/>
                     <nav className="hero-nav">
-                        <Link to="#apropos" smooth>À propos</Link>
+                        <Link to="#apropos" className="home-link" smooth>À propos</Link>
                         <Link to="#servicetraiteur" smooth>Service Traiteur</Link> 
                         <Link to="#menu" smooth>Galery</Link>
                         <Link to="#reservation" smooth>Réservation</Link>
@@ -51,12 +39,12 @@ export default function Header() {
                     <div className='hamburger'>
                         {statehamber ? 
                             <svg xmlns="http://www.w3.org/2000/svg" onClick={closeHamber} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hambericon">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                             </svg>
                           
                             : 
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"  onClick={actionhamber} className="hambericon">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                             </svg>
                         } 
                       </div>   
@@ -64,22 +52,21 @@ export default function Header() {
                                 
                 <div className='menuhamber' ref={handleblock}>
                   <div className='closesection'>
-                  
-                      <img src={logo} alt="logo image of CM Chicken" className='site-logo'/>
+                      <img src={logo} alt="logo image of CM Chicken" className='site-logo2'/>
                       <div className="centerclose"> 
                             <svg xmlns="http://www.w3.org/2000/svg" onClick={closeHamber} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="iconhamberclose">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                             </svg>
                       </div>
                   </div>  
-                  <nav className='listlinkhamburger'>
-                        <Link to="#apropos" smooth>À propos</Link>
-                        <Link to="#servicetraiteur" smooth>Service Traiteur</Link> 
-                        <Link to="#menu" smooth>Galery</Link>
-                        <Link to="#reservation" smooth>Réservation</Link>
-                        <Link to="#contact" smooth>Contact</Link>
-                        <Link className="header--cta" to="#reservation" smooth>Reservez Maintenant</Link> 
-                  </nav>
+                  <ul className='listlinkhamburger'>
+                        <li><Link to="#apropos" smooth>À propos</Link></li>
+                        <li><Link to="#servicetraiteur" smooth>Service Traiteur</Link></li> 
+                        <li><Link to="#menu" smooth>Galery</Link></li>
+                        <li><Link to="#reservation" smooth>Réservation</Link></li>
+                        <li><Link to="#contact" smooth>Contact</Link></li>
+                        <li><Link className="header--cta2" to="#reservation" smooth>Reservez Maintenant</Link></li> 
+                  </ul>
 
                 </div>
 
@@ -97,7 +84,7 @@ export default function Header() {
                     </div>
                     <img src={heroImage} alt="hero image of section" className="hero--image" />
                 </div>
-                <h1>Window width: {window.innerWidth}</h1>
+                
           </section>
        
        </BrowserRouter>
