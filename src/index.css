@@ -1140,11 +1140,14 @@ header nav{
     }
     .service--traiteur--item{
       max-width: 16em;
-      margin-left: .8em;
+      margin-left: 1em;
     }
     .service--traiteur--item--img{
       max-width:  10em;
       max-width: 12em;
+    }
+    .contact--row1--info{
+      text-wrap: wrap;
     }
   
   }
