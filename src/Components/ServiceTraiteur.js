@@ -56,7 +56,8 @@ export default function ServiceTraiteur() {
                     <div className="service--traiteur--item">
                         <div className="service--traiteur--item--info">
                               <h3 className="service--traiteur--item--title">
-                                Shawarma <span className='shawama'>237</span>
+                                Shawarma Kmer 
+                                {/* <span className='shawama'>237</span> */}
                               </h3>
                               <p className="service--traiteur--item--text">
                                 Poulet pane, poulet braisé, poulet<br />
