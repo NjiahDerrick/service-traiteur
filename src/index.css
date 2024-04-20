@@ -1026,9 +1026,7 @@ header nav{
       max-width: 88%;
       gap: .01em;
     }
-    .service--traiteur--item--img{
-      
-    }
+
     .service--traiteur--item--img:hover{
       transform: scale(.9);
     }
