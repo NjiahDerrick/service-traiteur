@@ -1127,7 +1127,7 @@ header nav{
       text-wrap: wrap;
     }
     .reservation--form{
-      max-width: 18em;
+      max-width: 17em;
     }
     .reservation--form > div > input, select, textarea{
       max-width: 17em;
@@ -1140,6 +1140,10 @@ header nav{
     }
     .service--traiteur--item{
       max-width: 100%;
+    }
+    .service--traiteur--item--img{
+      max-width:  10em;
+      max-width: 12em;
     }
   }
 
