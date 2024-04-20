@@ -1138,7 +1138,7 @@ header nav{
       max-width: 17em;
     }
     .reservation--form > div > textarea{
-      line-height: 6px;
+      line-height: 14px;
     }
   }
 
