@@ -1122,9 +1122,12 @@ header nav{
   
   
   @media (max-width: 475px) {
-    /* .container {
-    width: 100%;
-    } */
+    .reservation,
+    .galery,
+    .service--traiteur,
+    .apropos{
+      text-wrap: wrap;
+    }
   }
 
 
