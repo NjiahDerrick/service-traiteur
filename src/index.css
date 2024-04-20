@@ -1134,6 +1134,12 @@ header nav{
     .reservation--form > div > input, select, textarea{
       max-width: 17em;
     }
+    .reservation--form > button{
+      max-width: 17em;
+    }
+    .reservation--form > div > textarea{
+      line-height: 6px;
+    }
   }
 
 
