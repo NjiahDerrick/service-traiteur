@@ -1128,6 +1128,12 @@ header nav{
     .apropos{
       text-wrap: wrap;
     }
+    .reservation--form{
+      max-width: 18em;
+    }
+    .reservation--form > div > input, select, textarea{
+      max-width: 17em;
+    }
   }
 
 
