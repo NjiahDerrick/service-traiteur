@@ -949,7 +949,7 @@ header nav{
       padding-left: 8em;
     }
     .contact--row1--info{
-      max-width: 80%;
+      max-width: 100%;
       margin-top: 0em;
       margin-bottom: 0em;
       gap: 2em;
@@ -961,16 +961,16 @@ header nav{
       
     }
      .contact--row1--form{
-      max-width: 80%;
+      max-width: 100%;
       margin-top: 0em;
       margin-bottom: 4em;
      }
      .contact--row1--form > input{
-      width: 14em;
+      max-width: 14em;
      
     }
     .contact--row1--form > button{
-      width: 14em;
+      max-width: 10em;
       height: 3em;
       padding: .1em .2em;
       
@@ -994,10 +994,132 @@ header nav{
   }
   
   @media (max-width: 796px) {
-    /* Time to display flex with flex direction column 
-    until mobile size.
-     */
+   
+    .reservation{
+      display: flex;
+      flex-direction: column;
+      margin-top: 1em;
+      height: 1200px;
+      align-items: center;
+      gap: .1em;
+      padding-bottom: 4em;
+      padding-top: 2em;
+    }
+    .reservation--info{
+      margin-top: 0em;
+    }
+    .contact--row1--form > button{
+      height: 3.4em;
+      /* padding: .1em .2em;  */  
+    }
+    .contact--row1{
+      padding-left: 3em;
+     
+    }
+    .service--traiteur--item--row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2em;
+    }
+    .service--traiteur--item{
+      max-width: 88%;
+      gap: .01em;
+    }
+    .service--traiteur--item--img{
+      
+    }
+    .service--traiteur--item--img:hover{
+      transform: scale(.9);
+    }
+    .contact--row2{
+      gap: .1em;
+      text-wrap: wrap;
+      padding-left: .1em;
+    }
+    .apropos{
+      text-wrap: wrap;
+    }
+    .contact--row3{
+      text-wrap: wrap;
+      padding-left: .2em;
+    }
   }
+  @media (max-width: 600px){
+    .apropos{
+      height:1300px;
+      gap: 1em;
+    }
+    .apropos--item--wrapper{
+      display: flex;
+      flex-direction: column;
+      gap: .1em;
+      align-items: center;
+    }
+    .apropos--item{
+      margin-bottom: 0em;
+      margin-top: 0em;
+      max-width: 80%;
+    }
+    .apropos--item--title{
+      margin-top: .1em;
+      margin-bottom: 0em;
+    }
+    .apropos--item--text{
+      margin-top: .3em;
+    }
+    .apropos--item--image{
+      margin-top: 1.5em;
+    }
+    .service--traiteur--item--row{
+      margin-left: 1em;
+      margin-right: .2em;
+    }
+    .service--traiteur--item{
+      max-width: 90%;
+    }
+    .contact--row2{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 100%; 
+    }
+    .contact--row2--col1,
+    .contact--row2--col5{
+      margin-left: 2em;
+      max-width: 80%;
+    }
+    .contact--row1--info{
+      margin-bottom: 0em;
+      gap: .4em;
+      margin-top: 1em;
+    }
+    .contact--row1--form{
+      display: flex;
+      flex-direction: column;
+      margin-top: 0%;
+      width: 100%;
+    }
+    .contact--row1{
+      display: flex;
+      flex-direction: column;
+      height: 250px;
+      gap: .1em;
+      padding-right: 0.1em;
+      max-width: 100%;
+    }
+    .contact--row1--form > input{
+     max-width: 100%;
+      
+    }
+    .contact--row1--form > button{
+      width: 300px;
+       
+     }
+
+  }
+
+  
   
   @media (max-width: 475px) {
     /* .container {
