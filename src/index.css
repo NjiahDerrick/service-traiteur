@@ -1149,6 +1149,9 @@ header nav{
     .contact--row1--info{
       text-wrap: wrap;
     }
+    .contact--row1--info--text{
+      text-wrap: wrap;
+    }
   
   }
 
