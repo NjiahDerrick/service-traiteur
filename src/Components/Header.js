@@ -67,7 +67,6 @@ export default function Header() {
                         <li><Link to="#contact" smooth>Contact</Link></li>
                         <li><Link className="header--cta2" to="#reservation" smooth>Reservez Maintenant</Link></li> 
                   </ul>
-
                 </div>
 
                 <div className="hero--info">
@@ -81,7 +80,7 @@ export default function Header() {
                         sommes le service traiteur qu'il vous faut!
                       </p>
                       <Link className="hero--cta" to="#reservation" smooth>Je veux reserver &rarr;</Link>
-                    </div>
+                  </div>
                     <img src={heroImage} alt="hero image of section" className="hero--image" />
                 </div>
                 

@@ -1156,6 +1156,18 @@ header nav{
     .contact--row1--info--text{
       text-wrap: wrap;
     }
+    .hero{
+      height: 80vh;
+    }
+    .hero--info{
+      margin-left: 2em;
+    }
+    .site-logo{
+      margin-left: .1em;
+    }
+    .hero--title{
+      margin-top: .2em;
+    }
   
   }
 
