@@ -4,19 +4,7 @@ import { HashLink as Link } from 'react-router-hashlink'
 import itemImg from "../images/hero--img.png"
 
 export default function ServiceTraiteur() {
-      // Window tracker begins here
-      const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
 
-      React.useEffect(() => {
-        function watchWidth() {
-            setWindowWidth(window.innerWidth)
-        }
-         window.addEventListener("resize", watchWidth)
-    
-         return function() {
-            window.removeEventListener("resize", watchWidth)
-           }
-       }, [])
   return (
     <BrowserRouter>
          <section id='servicetraiteur' className='service--traiteur'>
@@ -122,7 +110,6 @@ export default function ServiceTraiteur() {
                     </div>
             </div>
           </div>
-          <h1>Window width: {window.innerWidth}</h1>
       </section>
     </BrowserRouter>
      
