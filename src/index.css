@@ -896,6 +896,7 @@ header nav{
     height: 34px;
     width: 34px;
     color: #EE790D;
+    padding-right: 1em;
   }
   .closesection {
     width: 100%;
@@ -1157,7 +1158,7 @@ header nav{
       text-wrap: wrap;
     }
     .hero{
-      height: 75vh;
+      height: 70vh;
     }
     .hero--info{
       margin-left: 2em;
@@ -1167,6 +1168,9 @@ header nav{
     }
     .hero--title{
       margin-top: .2em;
+    }
+    .galery-img{
+      height: 17em;
     }
   
   }
