@@ -29,12 +29,12 @@ export default function Header() {
                 <header id='header' className='hero-navigation'>
                     <img src={logo} alt="logo image of CM Chicken" className='site-logo'/>
                     <nav className="hero-nav">
-                        <Link to="#apropos" className="home-link" smooth>À propos</Link>
-                        <Link to="#servicetraiteur" smooth>Service Traiteur</Link> 
-                        <Link to="#menu" smooth>Galery</Link>
-                        <Link to="#reservation" smooth>Réservation</Link>
-                        <Link to="#contact" smooth>Contact</Link>
-                        <Link className="header--cta" to="#reservation" smooth>Reservez Maintenant</Link> 
+                        <Link to="#apropos" className="home-link" smooth="true">À propos</Link>
+                        <Link to="#servicetraiteur" smooth="true">Service Traiteur</Link> 
+                        <Link to="#menu" smooth="true">Galery</Link>
+                        <Link to="#reservation" smooth="true">Réservation</Link>
+                        <Link to="#contact" smooth="true">Contact</Link>
+                        <Link className="header--cta" to="#reservation" smooth="true">Reservez Maintenant</Link> 
                     </nav>
                     <div className='hamburger'>
                         {statehamber ? 
@@ -60,12 +60,12 @@ export default function Header() {
                       </div>
                   </div>  
                   <ul className='listlinkhamburger'>
-                        <li><Link to="#apropos" smooth>À propos</Link></li>
-                        <li><Link to="#servicetraiteur" smooth>Service Traiteur</Link></li> 
-                        <li><Link to="#menu" smooth>Galery</Link></li>
-                        <li><Link to="#reservation" smooth>Réservation</Link></li>
-                        <li><Link to="#contact" smooth>Contact</Link></li>
-                        <li><Link className="header--cta2" to="#reservation" smooth>Reservez Maintenant</Link></li> 
+                        <li><Link to="#apropos" smooth="true">À propos</Link></li>
+                        <li><Link to="#servicetraiteur" smooth="true">Service Traiteur</Link></li> 
+                        <li><Link to="#menu" smooth="true">Galery</Link></li>
+                        <li><Link to="#reservation" smooth="true">Réservation</Link></li>
+                        <li><Link to="#contact" smooth="true">Contact</Link></li>
+                        <li><Link className="header--cta2" to="#reservation"smooth="true">Reservez Maintenant</Link></li> 
                   </ul>
                 </div>
 
@@ -79,7 +79,7 @@ export default function Header() {
                         Avez-vous un evenement proche? alors nous<br />
                         sommes le service traiteur qu'il vous faut!
                       </p>
-                      <Link className="hero--cta" to="#reservation" smooth>Je veux reserver &rarr;</Link>
+                      <Link className="hero--cta" to="#reservation" smooth="true">Je veux reserver &rarr;</Link>
                   </div>
                     <img src={heroImage} alt="hero image of section" className="hero--image" />
                 </div>

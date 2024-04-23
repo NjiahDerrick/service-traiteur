@@ -34,7 +34,7 @@ export default function ServiceTraiteur() {
                               <h3 className="service--traiteur--item--units">
                                 200 unités
                               </h3>
-                              <Link className="service--traiteur--item--cta" to="#reservation" smooth>
+                              <Link className="service--traiteur--item--cta" to="#reservation" smooth="true">
                                 Reserver &rarr;
                               </Link>  
                           </div>
@@ -57,7 +57,7 @@ export default function ServiceTraiteur() {
                               <h3 className="service--traiteur--item--units">
                                 150 unités
                               </h3>
-                              <Link className="service--traiteur--item--cta" to="#reservation" smooth>
+                              <Link className="service--traiteur--item--cta" to="#reservation" smooth="true">
                                 Reserver &rarr;
                               </Link>  
                           </div>
@@ -80,7 +80,7 @@ export default function ServiceTraiteur() {
                               <h3 className="service--traiteur--item--units">
                                 250 unités
                               </h3>
-                              <Link className="service--traiteur--item--cta" to="#reservation" smooth>
+                              <Link className="service--traiteur--item--cta" to="#reservation" smooth="true">
                                 Reserver &rarr;
                               </Link>  
                           </div>
@@ -102,7 +102,7 @@ export default function ServiceTraiteur() {
                               <h3 className="service--traiteur--item--units">
                                 100 unités
                               </h3>
-                              <Link className="service--traiteur--item--cta" to="#reservation" smooth>
+                              <Link className="service--traiteur--item--cta" to="#reservation" smooth="true">
                                 Reserver &rarr;
                               </Link>  
                           </div>
