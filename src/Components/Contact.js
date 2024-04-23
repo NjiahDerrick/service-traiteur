@@ -9,6 +9,35 @@ import PhoneImg from "../images/phone.png"
 import FaqImg from "../images/faq.png"
 
 export default function  Contact() {
+      const [formData2, setFormData2] = React.useState(
+        {
+            email: "", 
+            password: "" 
+          
+        }
+    ) 
+    function handleChange(event){
+      /*the first constant not used because there is no radio input type. 
+      so we don't need to specify type inorder to chose btn checked and value.
+      const {name, value, type, checked} = event.target
+      */
+      const {name, value} = event.target
+          setFormData2({
+            ...formData2,
+            [name]: value,
+        });  
+    }
+
+      function handleSubmit(event){
+        event.preventDefault() // this prevents the default value from been submitted.
+        console.log(formData2)
+        setFormData2({
+          email: "", 
+          password: ""  
+        })
+
+    }
+
   return (
     <section id='contact' className='contact'>
         <div className="contact--row1">
@@ -19,16 +48,22 @@ export default function  Contact() {
                   vos commandes plus rapidement.
                 </p> 
               </div>
-              <form className="contact--row1--form">
+              <form className="contact--row1--form" onSubmit={handleSubmit}>
                 <input 
-                    type="text" 
+                    type="email" 
                     className="contact--row1--email"
                     placeholder='E-mail' 
+                    name='email'
+                    onChange={handleChange}
+                    value={formData2.email}
                 />
                 <input 
-                     type="text" 
+                     type="password" 
                      className="contact--row1--password" 
                      placeholder='Mot-de-pass'
+                     name='password'
+                     onChange={handleChange}
+                     value={formData2.email}
                 />
                 <button className="contact--row1--btn">Je M'inscris !</button>
               </form>
