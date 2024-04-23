@@ -17,10 +17,6 @@ export default function  Contact() {
         }
     ) 
     function handleChange(event){
-      /*the first constant not used because there is no radio input type. 
-      so we don't need to specify type inorder to chose btn checked and value.
-      const {name, value, type, checked} = event.target
-      */
       const {name, value} = event.target
           setFormData2({
             ...formData2,
