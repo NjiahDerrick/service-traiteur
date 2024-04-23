@@ -3,6 +3,43 @@ import Img1 from "../images/reservation--img1.png"
 import Img2 from "../images/reservation--img2.png"
 
 export default function Reservation() {
+        const [formData, setFormData] = React.useState(
+          {
+              fullname: "", 
+              phone: "", 
+              email: "", 
+              event: "",
+              location: "",
+              description: ""
+          }
+      ) 
+      
+      function handleChange(event){
+        /*the first constant not used because there is no radio input type. 
+        so we don't need to specify type inorder to chose btn checked and value.
+        const {name, value, type, checked} = event.target
+        */
+        const {name, value} = event.target
+        setFormData({
+          ...formData,
+          [name]: value,
+      });  
+    }
+
+    function handleSubmit(event){
+      event.preventDefault() // this prevents the default value from been submitted.
+      console.log(formData)
+      setFormData({
+        fullname: "", 
+        phone: "", 
+        email: "", 
+        event: "",
+        location: "",
+        description: ""
+      })
+
+  }
+
   return (
     <section id='reservation' className='reservation'>
       <div className="reservation--info">
@@ -21,7 +58,7 @@ export default function Reservation() {
           <img src={Img2} alt="" className="reservation--img2" />
         </div>
       </div>
-      <form  className="reservation--form">
+      <form onSubmit={handleSubmit} className="reservation--form">
          <div>
             <label htmlFor="fullname" className="fullname--label">Nom complet</label>
             <input 
@@ -30,7 +67,9 @@ export default function Reservation() {
                 placeholder='Entrer votre nom complet'
                 id='fullname' 
                 name='fullname'
-                autoFocus={true} 
+                autoFocus={true}
+                onChange={handleChange}
+                value={formData.fullname} 
             />
          </div>
          <div>
@@ -40,7 +79,9 @@ export default function Reservation() {
                   className="phone" 
                   placeholder='Entrer votre numéro de téléphone'
                   id='phone' 
-                  name='phone' 
+                  name='phone'
+                  onChange={handleChange}
+                  value={formData.phone} 
               />
          </div>
      
@@ -51,7 +92,9 @@ export default function Reservation() {
                   className="email" 
                   placeholder='Entrer une email valide'
                   id='email' 
-                  name='email' 
+                  name='email'
+                  onChange={handleChange}
+                  value={formData.email} 
               />
          </div>
           <div>
@@ -59,8 +102,8 @@ export default function Reservation() {
               <select 
                     name="event" 
                     id="event"
-                    // value={formData.favColor}
-                    // onChange={handleChange}
+                    value={formData.event}
+                    onChange={handleChange}
               >  
                     <option value="">-- Sélectionner le type d'événement --</option>
                     <option value="marriage">Mariage</option>
@@ -76,8 +119,10 @@ export default function Reservation() {
                   type="text" 
                   className="location" 
                   placeholder="Emplacement de l'événement"
-                  id='event' 
-                  name='event' 
+                  id='location' 
+                  name='location'
+                  onChange={handleChange}
+                  value={formData.location} 
               />
           </div>
           <div>
@@ -87,8 +132,8 @@ export default function Reservation() {
                       name='description'
                       className='description'
                       id='description'
-                      // onChange={handleChange}
-                      // value={formData.comments}
+                      onChange={handleChange}
+                      value={formData.description}
                 />
           </div>
           <button className='reservation--btn'>Réserver</button>

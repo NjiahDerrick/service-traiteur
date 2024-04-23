@@ -393,7 +393,7 @@ header nav{
 .reservation--form > div > textarea{
   height: 4.8em;
   width: 22em;
-  line-height: 4px;
+  line-height: 16px;
   border-radius: .6em;
   padding: 1.2em 1em;
   border: 1px solid #888888;
@@ -1140,7 +1140,7 @@ header nav{
       background-color: white;
     }
     .reservation--form > div > textarea{
-      line-height: 14px;
+      line-height: 16px;
       
     }
     .service--traiteur--item{
