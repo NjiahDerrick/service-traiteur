@@ -63,7 +63,7 @@ export default function  Contact() {
                      placeholder='Mot-de-pass'
                      name='password'
                      onChange={handleChange}
-                     value={formData2.email}
+                     value={formData2.password}
                 />
                 <button className="contact--row1--btn">Je M'inscris !</button>
               </form>
