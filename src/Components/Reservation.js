@@ -105,7 +105,7 @@ export default function Reservation() {
                     value={formData.event}
                     onChange={handleChange}
               >  
-                    <option value="">-- Sélectionner le type d'événement --</option>
+                    <option disabled value="">-- Sélectionner le type d'événement --</option>
                     <option value="marriage">Mariage</option>
                     <option value="birthday">Anniversaire</option>
                     <option value="baptism">Baptême</option>
