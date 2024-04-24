@@ -56,12 +56,12 @@ export default function  Contact() {
                 <input 
                      type="password" 
                      className="contact--row1--password" 
-                     placeholder='Mot-de-pass'
+                     placeholder='Mot de passe'
                      name='password'
                      onChange={handleChange}
                      value={formData2.password}
                 />
-                <button className="contact--row1--btn">Je M'inscris !</button>
+                <button className="contact--row1--btn">Je m'inscris !</button>
               </form>
         </div>
 
@@ -114,8 +114,8 @@ export default function  Contact() {
               <div className="contact--row2--col4">
                 
                 <ul className="contact--row2--col4--list">
-                <li className="contact--row2--col4--title">Nos Deserts</li>
-                  <li>Yaourt</li>
+                <li className="contact--row2--col4--title">Nos Desserts</li>
+                  <li>Yaourts</li>
                   <li>Glaces</li>
                   <li>Jus de fruits</li>
                   <li>Menthe au lait</li>

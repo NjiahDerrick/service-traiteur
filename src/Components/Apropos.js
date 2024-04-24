@@ -11,17 +11,17 @@ export default function Apropos() {
           Un <span className="apropos--title--design1">fast-food</span> dynamique et
           <br />de <span className="apropos--title--design2"> Qualité !</span>
         </h1>
-        <p className="apropos--text">Nous vous proposons un service traiteur de qalité
-           <br /> disponible pour tout vos événement
+        <p className="apropos--text">Nous vous proposons un service traiteur de qualité
+           <br /> disponible pour touts vos événements
         </p>
         <div className="apropos--item--wrapper">
                 <div className="apropos--item">
                   <img src={img1} alt="" className="apropos--item--image" />
-                  <h3 className="apropos--item--title">Variété de Menu</h3>
+                  <h3 className="apropos--item--title">Variété des Menus</h3>
                   <p className="apropos--item--text">
                     Nous vous proposons une <br />
                     variété de menu<br />
-                    gastronomique prête a<br />
+                    gastronomique prête à<br />
                     satisfaire vos attentes.
                   </p>
                 </div>
@@ -50,7 +50,7 @@ export default function Apropos() {
 
                 <div className="apropos--item">
                   <img src={img4} alt="" className="apropos--item--image" />
-                  <h3 className="apropos--item--title">Facilité de Booking</h3>
+                  <h3 className="apropos--item--title">Facilité le Booking</h3>
                   <p className="apropos--item--text">
                     Oubliez les tracas de la<br />
                     réservation. Notre Système<br />

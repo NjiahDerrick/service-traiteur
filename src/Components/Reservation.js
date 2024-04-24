@@ -50,7 +50,7 @@ export default function Reservation() {
         <p className="reservation--info--text">
           Remplisser notre formulaire de réservation, et<br />
           notre équipe vous contactera pour une prise en<br />
-          charge rapide sur vos besoins.
+          charge rapide pour vos besoins.
 
         </p>
         <div className="reservation--info--imgs">

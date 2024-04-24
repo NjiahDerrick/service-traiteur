@@ -31,7 +31,7 @@ export default function Header() {
                     <nav className="hero-nav">
                         <Link to="#apropos" className="home-link" smooth="true">À propos</Link>
                         <Link to="#servicetraiteur" smooth="true">Service Traiteur</Link> 
-                        <Link to="#menu" smooth="true">Galery</Link>
+                        <Link to="#menu" smooth="true">Galerie</Link>
                         <Link to="#reservation" smooth="true">Réservation</Link>
                         <Link to="#contact" smooth="true">Contact</Link>
                         <Link className="header--cta" to="#reservation" smooth="true">Reservez Maintenant</Link> 
@@ -62,7 +62,7 @@ export default function Header() {
                   <ul className='listlinkhamburger'>
                         <li><Link to="#apropos" smooth="true">À propos</Link></li>
                         <li><Link to="#servicetraiteur" smooth="true">Service Traiteur</Link></li> 
-                        <li><Link to="#menu" smooth="true">Galery</Link></li>
+                        <li><Link to="#menu" smooth="true">Galerie</Link></li>
                         <li><Link to="#reservation" smooth="true">Réservation</Link></li>
                         <li><Link to="#contact" smooth="true">Contact</Link></li>
                         <li><Link className="header--cta2" to="#reservation"smooth="true">Reservez Maintenant</Link></li> 
@@ -76,7 +76,7 @@ export default function Header() {
                           <span className="sub--title">Service traiteur</span> 
                       </h1>
                       <p className="hero--details">
-                        Avez-vous un evenement proche? alors nous<br />
+                        Avez-vous un événement proche? alors nous<br />
                         sommes le service traiteur qu'il vous faut!
                       </p>
                       <Link className="hero--cta" to="#reservation" smooth="true">Je veux reserver &rarr;</Link>

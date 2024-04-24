@@ -13,8 +13,8 @@ export default function ServiceTraiteur() {
             <br />en plus <span className="service--traiteur--title--design2"> GRAND !</span>
           </h1>
           <p className="service--traiteur--text">
-            CM chicken service traiteur vous donne la possibilit de<br />
-            commander tout nos menu des services traiteur en<br />
+            CM chicken service traiteur vous donne la possibilite de<br />
+            commander touts nos menus de service traiteur en<br />
             grande quantité pour vos événements.
           </p>
           <div className="service--traiteur--item--wrapper">
@@ -22,10 +22,10 @@ export default function ServiceTraiteur() {
                     <div className="service--traiteur--item">
                         <div className="service--traiteur--item--info">
                               <h3 className="service--traiteur--item--title">
-                                Spéciale poulet
+                                Spécial poulet
                               </h3>
                               <p className="service--traiteur--item--text">
-                                Poulet pane, poulet braisé, poulet<br />
+                                Poulet pane, poulet braisé,<br /> poulet
                                 rôtie, poulet frit.
                               </p>
                               <p className="service--traiteur--item--qty">
@@ -48,7 +48,7 @@ export default function ServiceTraiteur() {
                                 {/* <span className='shawama'>237</span> */}
                               </h3>
                               <p className="service--traiteur--item--text">
-                                Poulet pane, poulet braisé, poulet<br />
+                                Poulet pane, poulet braisé,<br /> poulet
                                 rôtie, poulet frit.
                               </p>
                               <p className="service--traiteur--item--qty">
@@ -71,7 +71,7 @@ export default function ServiceTraiteur() {
                                 Burger Mboa
                               </h3>
                               <p className="service--traiteur--item--text">
-                                Poulet pane, poulet braisé, poulet<br />
+                                Poulet pane, poulet braisé,<br /> poulet
                                 rôtie, poulet frit.
                               </p>
                               <p className="service--traiteur--item--qty">
@@ -90,10 +90,10 @@ export default function ServiceTraiteur() {
                     <div className="service--traiteur--item">
                         <div className="service--traiteur--item--info">
                               <h3 className="service--traiteur--item--title">
-                                Spéciale poulet
+                                Spécial poulet
                               </h3>
                               <p className="service--traiteur--item--text">
-                                Poulet pane, poulet braisé, poulet<br />
+                                Poulet pane, poulet braisé,<br /> poulet
                                 rôtie, poulet frit.
                               </p>
                               <p className="service--traiteur--item--qty">
