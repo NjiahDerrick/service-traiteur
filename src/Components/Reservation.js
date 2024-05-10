@@ -4,6 +4,7 @@ import Img2 from "../images/reservation--img2.png"
 import Img3 from "../images/toast=reservation valider.png"
 import Img4 from "../images/toast=reservation echec.png"
 
+
 export default function Reservation() {
         const [success, setSuccess] = React.useState(false)
         const [failure, setFailure] = React.useState(false)
@@ -50,19 +51,19 @@ export default function Reservation() {
                   }
                   console.log(data);
                   setSuccess(prevSuc => !prevSuc)
-                  // setTimeout(()=>{
-                  //   const toast = document.querySelector('.reservation--toast')
-                  //   toast.style.display = 'none'
-                  // }, 5000);
+              
+                  setTimeout(()=>{
+                    setSuccess(prevSuc => !prevSuc)
+                  }, 5000);
                   
               } catch (error) {
                   console.log('cannot submit form');
                   setFailure(prevFail => !prevFail)
+                 
 
-                  // setTimeout(()=>{
-                  //   const toast = document.querySelector('.reservation--toast')
-                  //   toast.style.display = 'none'
-                  // }, 5000);
+                  setTimeout(()=>{
+                    setFailure(prevFail => !prevFail)  
+                  }, 5000);
                   
               }
               setFormData({
@@ -74,6 +75,8 @@ export default function Reservation() {
                        description: ""
                     })
           }
+
+         
 
         
     
@@ -108,7 +111,8 @@ export default function Reservation() {
                 name='fullname'
                 autoFocus={true}
                 onChange={handleChange}
-                value={formData.fullname} 
+                value={formData.fullname}
+                required 
             />
          </div>
          <div>
@@ -120,7 +124,8 @@ export default function Reservation() {
                   id='phone' 
                   name='phone'
                   onChange={handleChange}
-                  value={formData.phone} 
+                  value={formData.phone}
+                  required  
               />
          </div>
      
@@ -133,7 +138,8 @@ export default function Reservation() {
                   id='email' 
                   name='email'
                   onChange={handleChange}
-                  value={formData.email} 
+                  value={formData.email}
+                  required  
               />
          </div>
           <div>
@@ -143,6 +149,7 @@ export default function Reservation() {
                     id="event"
                     value={formData.event}
                     onChange={handleChange}
+                    required 
               >  
                     <option disabled value="">-- Sélectionner le type d'événement --</option>
                     <option value="marriage">Mariage</option>
@@ -161,7 +168,8 @@ export default function Reservation() {
                   id='location' 
                   name='location'
                   onChange={handleChange}
-                  value={formData.location} 
+                  value={formData.location}
+                  required  
               />
           </div>
           <div>
@@ -173,6 +181,7 @@ export default function Reservation() {
                       id='description'
                       onChange={handleChange}
                       value={formData.description}
+                      required 
                 />
           </div>
           <button className='reservation--btn'>Réserver</button>
