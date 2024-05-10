@@ -289,7 +289,7 @@ header nav{
   background-image: url("images/service--traiteur--bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 620px;
+  height: 730px;
   margin-bottom: 0px;
   text-align: center;
   margin-top: 3em;
@@ -435,6 +435,18 @@ header nav{
   padding-right: .1em;
   transform: translateX(40%);
 
+}
+.toast--valider,
+.toast--echec{
+  position: absolute;
+  left: 4em;
+  bottom: 2em;
+  /* top: 3em;
+  left: .6em; */
+
+}
+.reservation--toast{
+  position: relative;
 }
 
 /**** CSS FOR CONTACT ****/

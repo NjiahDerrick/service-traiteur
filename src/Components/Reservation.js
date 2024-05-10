@@ -1,8 +1,13 @@
 import React from 'react'
 import Img1 from "../images/reservation--img1.png"
 import Img2 from "../images/reservation--img2.png"
+import Img3 from "../images/toast=reservation valider.png"
+import Img4 from "../images/toast=reservation echec.png"
 
 export default function Reservation() {
+        const [success, setSuccess] = React.useState(false)
+        const [failure, setFailure] = React.useState(false)
+
         const [formData, setFormData] = React.useState(
           {
               fullname: "", 
@@ -26,21 +31,46 @@ export default function Reservation() {
       });  
     }
 
-    function handleSubmit(event){
-      event.preventDefault() // this prevents the default value from been submitted.
-      console.log(formData)
-      setFormData({
-        fullname: "", 
-        phone: "", 
-        email: "", 
-        event: "",
-        location: "",
-        description: ""
-      })
 
-  }
+      
+        async function handleSubmit(event){
+          event.preventDefault()
+                try {
+                  const res = await fetch('http://localhost:9000/data/' , {
+                      method:'POST',
+                      headers: {
+                          'Content-Type': 'application/json'
+                      },
+                      body: JSON.stringify(formData)
+                  });
+                  const data = await res.json()
+                  if(!res.ok){
+                      console.log('error message')
+                      return;
+                  }
+                  console.log(data);
+                  setSuccess(prevSuc => !prevSuc)
+                  
+              } catch (error) {
+                  console.log('cannot submit form');
+                  setFailure(prevFail => !prevFail)
+                  
+              }
+              setFormData({
+                       fullname: "", 
+                       phone: "", 
+                       email: "", 
+                       event: "",
+                       location: "",
+                       description: ""
+                    })
+
+
+        }
+    
 
   return (
+    <>
     <section id='reservation' className='reservation'>
       <div className="reservation--info">
         <h1 className="reservation--info--title">
@@ -138,6 +168,12 @@ export default function Reservation() {
           </div>
           <button className='reservation--btn'>Réserver</button>
       </form>
+     
     </section>
+     <div className="reservation--toast">
+     {success && <img src={Img3} alt="" className="toast--valider" />}
+     {failure && <img src={Img4} alt="" className="toast--echec" />}
+   </div>
+   </>
   )
 }
