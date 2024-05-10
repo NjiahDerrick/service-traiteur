@@ -447,6 +447,7 @@ header nav{
 }
 .reservation--toast{
   position: relative;
+  /* display: none; */
 }
 
 /**** CSS FOR CONTACT ****/
@@ -1193,9 +1194,10 @@ header nav{
       max-height: 50px;
       margin-left:  auto;
       margin-right: auto;
-      margin-top: 6em;
+      margin-top: 4em;
       position: absolute;
       bottom: .2em;
+      box-shadow: .2em .3em .2em .3em;
     }
   
   }
