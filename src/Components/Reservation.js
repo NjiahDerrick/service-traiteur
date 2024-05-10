@@ -50,19 +50,19 @@ export default function Reservation() {
                   }
                   console.log(data);
                   setSuccess(prevSuc => !prevSuc)
-                  setTimeout(()=>{
-                    const toast = document.querySelector('.reservation--toast')
-                    toast.style.display = 'none'
-                  }, 5000);
+                  // setTimeout(()=>{
+                  //   const toast = document.querySelector('.reservation--toast')
+                  //   toast.style.display = 'none'
+                  // }, 5000);
                   
               } catch (error) {
                   console.log('cannot submit form');
                   setFailure(prevFail => !prevFail)
 
-                  setTimeout(()=>{
-                    const toast = document.querySelector('.reservation--toast')
-                    toast.style.display = 'none'
-                  }, 5000);
+                  // setTimeout(()=>{
+                  //   const toast = document.querySelector('.reservation--toast')
+                  //   toast.style.display = 'none'
+                  // }, 5000);
                   
               }
               setFormData({
