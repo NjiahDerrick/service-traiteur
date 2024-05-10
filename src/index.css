@@ -1186,6 +1186,13 @@ header nav{
     .galery-img{
       height: 17em;
     }
+    
+    .toast--valider,
+    .toast--echec{
+      max-width: 100px;
+      max-height: 50px;
+      margin: .3em auto;
+    }
   
   }
 

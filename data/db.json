@@ -35,7 +35,15 @@
       "event": "marriage",
       "location": "Bastos",
       "description": "classic wedding"
+    },
+    {
+      "id": "0336",
+      "fullname": "Njiah Derrick Tata",
+      "phone": "654035929",
+      "email": "tnjiah@gmail.com",
+      "event": "birthday",
+      "location": "Santa Babara",
+      "description": "fhghjg"
     }
-    
   ]
 }
