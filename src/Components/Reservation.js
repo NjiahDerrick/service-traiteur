@@ -12,11 +12,11 @@ export default function Reservation() {
 
         const [formData, setFormData] = React.useState(
           {
-              fullname: "", 
+              name: "", 
               phone: "", 
               email: "", 
-              event: "",
-              location: "",
+              eventType: "",
+              localisation: "",
               description: ""
           }
       ) 
@@ -39,19 +39,19 @@ export default function Reservation() {
           event.preventDefault()
           setStatus("submitting")
                 try {
-                  const res = await fetch('http://localhost:9001/data/' , {
+                  const res = await fetch('https://cmchicken-backend.onrender.com/api/public/reservation/add' , {
                       method:'POST',
                       headers: {
                           'Content-Type': 'application/json'
                       },
                       body: JSON.stringify(formData)
                   });
-                  const data = await res.json()
+
                   if(!res.ok){
                       console.log('error message')
                       return;
                   }
-                  console.log(data);
+                  
                   setSuccess(prevSuc => !prevSuc)
                   setStatus("idle")
               
@@ -70,12 +70,12 @@ export default function Reservation() {
                   
               }
               setFormData({
-                       fullname: "", 
-                       phone: "", 
-                       email: "", 
-                       event: "",
-                       location: "",
-                       description: ""
+                      name: "", 
+                      phone: "", 
+                      email: "", 
+                      eventType: "",
+                      localisation: "",
+                      description: ""
                     })
                     
           }
@@ -112,10 +112,10 @@ export default function Reservation() {
                 className="fullname" 
                 placeholder='Entrer votre nom complet'
                 id='fullname' 
-                name='fullname'
+                name='name'
                 autoFocus={true}
                 onChange={handleChange}
-                value={formData.fullname}
+                value={formData.name}
                 required 
             />
          </div>
@@ -149,9 +149,9 @@ export default function Reservation() {
           <div>
               <label htmlFor="event" className="event--label">Type d'événement</label>
               <select 
-                    name="event" 
+                    name="eventType" 
                     id="event"
-                    value={formData.event}
+                    value={formData.eventType}
                     onChange={handleChange}
                     required 
               >  
@@ -170,9 +170,9 @@ export default function Reservation() {
                   className="location" 
                   placeholder="Emplacement de l'événement"
                   id='location' 
-                  name='location'
+                  name='localisation'
                   onChange={handleChange}
-                  value={formData.location}
+                  value={formData.localisation}
                   required  
               />
           </div>

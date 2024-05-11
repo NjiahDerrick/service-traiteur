@@ -10,85 +10,40 @@
       "id": "1"
     },
     {
-      "fullname": "tata derrick",
+      "name": "tata derrick",
       "phone": "43567832",
       "email": "tnjiah@gmail.com",
-      "event": "birthday",
-      "location": "obili",
+      "eventType": "birthday",
+      "localisation": "obili",
       "description": "new things",
       "id": "2"
     },
     {
-      "id": "4cf8",
-      "fullname": "Njiah Derrick Tata",
+      "id": "1d67",
+      "name": "Njiah Derrick Tata",
       "phone": "654035929",
       "email": "tnjiah@gmail.com",
-      "event": "marriage",
-      "location": "Kumba",
-      "description": "dgfhg"
+      "eventType": "birthday",
+      "localisation": "emana",
+      "description": "asdfd"
     },
     {
-      "id": "1e94",
-      "fullname": "Njiah Derrick Tata",
+      "id": "23de",
+      "name": "Njiah Derrick Tata",
       "phone": "654035929",
       "email": "tnjiah@gmail.com",
-      "event": "birthday",
-      "location": "Santa Babara",
-      "description": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+      "eventType": "birthday",
+      "localisation": "Santa",
+      "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
     },
     {
-      "id": "d3a4",
-      "fullname": "Njiah Derrick Tata",
+      "id": "f580",
+      "name": "Njiah Derrick Tata",
       "phone": "654035929",
       "email": "tnjiah@gmail.com",
-      "event": "birthday",
-      "location": "Emana",
-      "description": "ffffffffffffffffffffffffffffffffff"
-    },
-    {
-      "id": "21f8",
-      "fullname": "Njiah Derrick Tata",
-      "phone": "654035929",
-      "email": "tnjiah@gmail.com",
-      "event": "marriage",
-      "location": "Kumba",
-      "description": "ggggggggggggggggggggggggggggggggggggggggggg"
-    },
-    {
-      "id": "7871",
-      "fullname": "Njiah Derrick Tata",
-      "phone": "654035929",
-      "email": "tnjiah@gmail.com",
-      "event": "birthday",
-      "location": "Kumba",
-      "description": "cccccccccccccccccccccccccc"
-    },
-    {
-      "id": "c7f3",
-      "fullname": "Njiah Derrick Tata",
-      "phone": "654035929",
-      "email": "tnjiah@gmail.com",
-      "event": "birthday",
-      "location": "Santa Babara",
-      "description": "dfgdfg"
-    },
-    {
-      "id": "e385",
-      "fullname": "Njiah Derrick Tata",
-      "phone": "654035929",
-      "email": "tnjiah@gmail.com",
-      "event": "birthday",
-      "location": "Santa Babara",
-      "description": "ghjgj"
-    },
-    {
-      "id": "2e4a",
-      "fullname": "Njiah Derrick Tata",
-      "phone": "654035929",
-      "email": "tnjiah@gmail.com",
-      "event": "birthday",
-      "location": "Emana",
-      "description": "hghg"
+      "eventType": "birthday",
+      "localisation": "emana",
+      "description": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
     }
   ]
 }
