@@ -8,6 +8,7 @@ import Img4 from "../images/toast=reservation echec.png"
 export default function Reservation() {
         const [success, setSuccess] = React.useState(false)
         const [failure, setFailure] = React.useState(false)
+        const [status, setStatus] = React.useState("idle")
 
         const [formData, setFormData] = React.useState(
           {
@@ -36,8 +37,9 @@ export default function Reservation() {
       
         async function handleSubmit(event){
           event.preventDefault()
+          setStatus("submitting")
                 try {
-                  const res = await fetch('http://localhost:9000/data/' , {
+                  const res = await fetch('http://localhost:9001/data/' , {
                       method:'POST',
                       headers: {
                           'Content-Type': 'application/json'
@@ -51,6 +53,7 @@ export default function Reservation() {
                   }
                   console.log(data);
                   setSuccess(prevSuc => !prevSuc)
+                  setStatus("idle")
               
                   setTimeout(()=>{
                     setSuccess(prevSuc => !prevSuc)
@@ -59,8 +62,8 @@ export default function Reservation() {
               } catch (error) {
                   console.log('cannot submit form');
                   setFailure(prevFail => !prevFail)
-                 
-
+                  setStatus("idle")
+                  
                   setTimeout(()=>{
                     setFailure(prevFail => !prevFail)  
                   }, 5000);
@@ -74,6 +77,7 @@ export default function Reservation() {
                        location: "",
                        description: ""
                     })
+                    
           }
 
          
@@ -184,7 +188,15 @@ export default function Reservation() {
                       required 
                 />
           </div>
-          <button className='reservation--btn'>Réserver</button>
+          <button 
+              className='reservation--btn'
+              disabled={status === "submitting"}
+          >
+            {status === "submitting"
+                ? "En Cours..."
+                : "Réserver"
+              }
+          </button>
       </form>
      
     </section>
