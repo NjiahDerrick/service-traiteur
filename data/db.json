@@ -44,6 +44,24 @@
       "event": "birthday",
       "location": "Emana",
       "description": "ffffffffffffffffffffffffffffffffff"
+    },
+    {
+      "id": "21f8",
+      "fullname": "Njiah Derrick Tata",
+      "phone": "654035929",
+      "email": "tnjiah@gmail.com",
+      "event": "marriage",
+      "location": "Kumba",
+      "description": "ggggggggggggggggggggggggggggggggggggggggggg"
+    },
+    {
+      "id": "7871",
+      "fullname": "Njiah Derrick Tata",
+      "phone": "654035929",
+      "email": "tnjiah@gmail.com",
+      "event": "birthday",
+      "location": "Kumba",
+      "description": "cccccccccccccccccccccccccc"
     }
   ]
 }
