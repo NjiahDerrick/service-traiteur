@@ -283,6 +283,9 @@ header nav{
   width: 48em;
   margin: 1em auto;
 }
+.carousel{
+  color: #F93A47;
+}
 
 /**** CSS CODE FOR RESERVATION *****/
 .reservation{
