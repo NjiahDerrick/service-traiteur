@@ -1171,7 +1171,7 @@ header nav{
     .service--traiteur--item--img{
       /* max-width:  10em; */
       max-width: 12em;
-      margin-left: 1em;
+      margin-right: 1em;
     }
     .contact--row1--info{
       text-wrap: wrap;
