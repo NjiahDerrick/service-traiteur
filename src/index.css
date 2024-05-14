@@ -1167,11 +1167,10 @@ header nav{
     .service--traiteur--item{
       max-width: 16em;
       margin-left: 1.2em;
-      gap: .3em;
     }
     .service--traiteur--item--img{
-      /* max-width:  10em; */
-      max-width: 12em;
+      max-width:  10em;
+      /* max-width: 12em; */
       margin-right: 1.5em;
     }
     .contact--row1--info{
