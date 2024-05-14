@@ -13,11 +13,11 @@ export default function Menu() {
             { url: "http://localhost:3000/image-5.jpg", title: "italy" },
           ];
 
-          const containerStyles = {
-            width: "500px",
-            height: "280px",
-            margin: "0 auto",
-          };
+          // const containerStyles = {
+          //   width: "500px",
+          //   height: "280px",
+          //   margin: "0 auto",
+          // };
   return (
       <section id='menu' className='galery'>
            <h1 className="galery--title">
@@ -31,8 +31,10 @@ export default function Menu() {
           </p>
           {/* <img src={galeryImg} alt="" className='galery-img' /> */}
            
-            
-          <div style={containerStyles}>
+          {/* <div style={containerStyles} >
+            <ImageSlider slides={slides} />
+          </div> */}
+          <div className='galery-img'>
             <ImageSlider slides={slides} />
           </div>
           
