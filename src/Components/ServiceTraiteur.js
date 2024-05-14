@@ -1,7 +1,9 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hashlink'
-import itemImg from "../images/hero--img.png"
+import quater from "../images/quater.png"
+import half from "../images/half.png"
+import full from "../images/full.png"
 
 export default function ServiceTraiteur() {
 
@@ -38,7 +40,7 @@ export default function ServiceTraiteur() {
                                 Reserver &rarr;
                               </Link>  
                           </div>
-                          <img src={itemImg} alt="" className="service--traiteur--item--img" />
+                          <img src={quater} alt="" className="service--traiteur--item--img" />
                     </div>
 
                     <div className="service--traiteur--item">
@@ -61,7 +63,7 @@ export default function ServiceTraiteur() {
                                 Reserver &rarr;
                               </Link>  
                           </div>
-                          <img src={itemImg} alt="" className="service--traiteur--item--img" />
+                          <img src={half} alt="" className="service--traiteur--item--img" />
                     </div>
             </div>
             <div className="service--traiteur--item--row">
@@ -84,7 +86,7 @@ export default function ServiceTraiteur() {
                                 Reserver &rarr;
                               </Link>  
                           </div>
-                          <img src={itemImg} alt="" className="service--traiteur--item--img" />
+                          <img src={half} alt="" className="service--traiteur--item--img" />
                     </div>
 
                     <div className="service--traiteur--item">
@@ -106,7 +108,7 @@ export default function ServiceTraiteur() {
                                 Reserver &rarr;
                               </Link>  
                           </div>
-                          <img src={itemImg} alt="" className="service--traiteur--item--img" />
+                          <img src={full} alt="" className="service--traiteur--item--img" />
                     </div>
             </div>
           </div>

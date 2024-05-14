@@ -81,11 +81,14 @@ header nav{
   flex-direction: column;
 }
  .hero--image{
-  height: 30em;
-  width: 35em;
+  height: 29.3em;
+  width: 23em;
   transform:rotate(0, 1.8, 8.15deg);
-  margin: 0em 0em;
+  /* margin: 0em 0em; */
+  margin-right: 6em;
+  margin-bottom: 0em;
 }
+
 .hero--cta{
   width: 8em;
   height: 1.12em;
@@ -208,11 +211,13 @@ header nav{
   transform:rotate(0, 1.8, 8.15deg);
   transition: all;
   transition-duration: 60ms;
+  /* margin-top: .6em;
+  margin-bottom: 6em; */
 }
 
 .service--traiteur--item--img:hover{
   /* animation: enlarge 800ms; */
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 .service--traiteur--item--title{
   font-family: "Pacifico", cursive;
