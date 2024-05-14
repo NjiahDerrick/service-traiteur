@@ -24,11 +24,10 @@ export default function ServiceTraiteur() {
                     <div className="service--traiteur--item">
                         <div className="service--traiteur--item--info">
                               <h3 className="service--traiteur--item--title">
-                                Spécial poulet
+                                Quart de Poulet
                               </h3>
                               <p className="service--traiteur--item--text">
-                                Poulet pane, poulet braisé,<br /> poulet
-                                rôtie, poulet frit.
+                                 Accompagnements au choix: pommes ou plaintains.
                               </p>
                               <p className="service--traiteur--item--qty">
                                 Quantité min (réservation)
@@ -46,12 +45,11 @@ export default function ServiceTraiteur() {
                     <div className="service--traiteur--item">
                         <div className="service--traiteur--item--info">
                               <h3 className="service--traiteur--item--title">
-                                Shawarma 
+                                Demi Poulet
                                 {/* <span className='shawama'>237</span> */}
                               </h3>
                               <p className="service--traiteur--item--text">
-                                Poulet pane, poulet braisé,<br /> poulet
-                                rôtie, poulet frit.
+                                Accompagnements au choix: pommes ou plaintains.
                               </p>
                               <p className="service--traiteur--item--qty">
                                 Quantité min (réservation)
@@ -70,11 +68,10 @@ export default function ServiceTraiteur() {
                    <div className="service--traiteur--item">
                         <div className="service--traiteur--item--info">
                               <h3 className="service--traiteur--item--title">
-                                Burger Mboa
+                                Demi Poulet
                               </h3>
                               <p className="service--traiteur--item--text">
-                                Poulet pane, poulet braisé,<br /> poulet
-                                rôtie, poulet frit.
+                                 Accompagnements au choix: pommes ou plaintains.
                               </p>
                               <p className="service--traiteur--item--qty">
                                 Quantité min (réservation)
@@ -92,11 +89,10 @@ export default function ServiceTraiteur() {
                     <div className="service--traiteur--item">
                         <div className="service--traiteur--item--info">
                               <h3 className="service--traiteur--item--title">
-                                Spécial poulet
+                                Poulet Entier
                               </h3>
                               <p className="service--traiteur--item--text">
-                                Poulet pane, poulet braisé,<br /> poulet
-                                rôtie, poulet frit.
+                                Accompagnements au choix: pommes ou plaintains.
                               </p>
                               <p className="service--traiteur--item--qty">
                                 Quantité min (réservation)
