@@ -3,7 +3,7 @@
 export default  [
     {
        id: "1",
-       url: "image-1.jpg",
+       url: "image-1.png",
        title: "beach"  
     },
     {
@@ -18,12 +18,12 @@ export default  [
      },
      {
         id: "4",
-        url: "image-4.jpg",
+        url: "image-4.png",
         title: "city"  
      },
      {
         id: "5",
-        url: "image-5.jpg",
+        url: "image-5.png",
         title: "Italy"  
      }
 
