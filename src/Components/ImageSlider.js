@@ -46,15 +46,15 @@ const dotStyle = {
   fontSize: "20px",
 };
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide ? data.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
   const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
+    const isLastSlide = currentIndex === data.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
@@ -63,7 +63,7 @@ const ImageSlider = ({ slides }) => {
   };
   const slideStylesWidthBackground = {
     ...slideStyles,
-    backgroundImage: `url(${slides[currentIndex].url})`,
+    backgroundImage: `url(${data[currentIndex].url})`,
   };
 
   return (
@@ -78,7 +78,7 @@ const ImageSlider = ({ slides }) => {
       </div>
       <div style={slideStylesWidthBackground}></div>
       <div style={dotsContainerStyles}>
-        {slides.map((slide, slideIndex) => (
+        {data.map((slide, slideIndex) => (
           <div
             style={dotStyle}
             key={slideIndex}
