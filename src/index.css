@@ -66,6 +66,7 @@ header nav{
 .hero{
   background-image: url("images/hero--bg.png");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 96vh;
 }
 
@@ -338,7 +339,7 @@ header nav{
   top: 1em;
   left: .3em;
   gap: 0px;
-  opacity: 0px;
+  /* opacity: 0px; */
  
 }
 
@@ -350,7 +351,7 @@ header nav{
   top: .8em;
   left: .6em;
   gap: 0px;
-  opacity: 0px;
+  /* opacity: 0px; */
 
 }
 .reservation--form{
@@ -1139,8 +1140,6 @@ header nav{
 
   }
 
-  
-  
   @media (max-width: 475px) {
     .reservation,
     .galery,
@@ -1209,7 +1208,113 @@ header nav{
   
   }
 
+   /* @media (min-width: 1281px){
+    .hero{
+      height: 80vh;
+    }
 
+    .hero--image{
+      height: 41.2em;
+      width: 32em;
+      margin-right: 6em;
+      margin-bottom: 0em;
+    }
+     .site-logo{
+      margin-left: 4em;
+      height: 4em;
+      width: 3.9em;
+      margin-top: 0;
+     
+    }
+    .hero--text{
+      margin-left: 4em;
+      
+    }
+  
+    
+    .hero--cta{
+      width: 9em;
+      height: 1.4em;
+      border-radius: 1.4em;
+      padding: .7em 1.3em;
+      font-size: 1.3em;
+      margin-top: 1em;
+      transition: all;
+      transition-duration: 2ms;
+    }
+    .hero--cta:hover{
+        font-weight: 500; 
+        font-size: 1.4em;
+        
+    }
+    
+
+    .hero--title{
+      font-size: 4em;
+    }
+   
+    .hero--details{
+      margin-top: 0em;
+      font-size: 1.5em;
+    }
+    .service--traiteur{
+      height: 98vh;
+    }
+    .service--traiteur--item--wrapper{
+      margin-top: 4em;
+      margin-left: 22em;
+      margin-right: 22em;
+    
+    }
+    .service--traiteur--item{
+      width: 490px;
+      height: 250px;
+      padding: 1.3em 1.8em;
+      gap: 2em;
+      border-radius: 2em;
+    }
+    .service--traiteur--item--row{
+      margin-bottom: 3.5em;
+    }
+    .service--traiteur--title,
+    .galery--title,
+    .reservation--info--title{
+      font-size: 2em;
+    }
+    .service--traiteur--text,
+    .reservation--info--text,
+    .galery--text{
+      font-size: 1.2em;
+    }
+    .apropos{
+      text-align: center;
+      margin-top: 4em;
+      margin-bottom: 3em;
+      height: 600px;
+    }
+    .apropos--item--wrapper{
+      margin-top: 5em;
+    }
+    .apropos--title{
+       font-size: 2em;
+    }
+    .apropos--text{
+      font-size: 1.2em;
+    }
+    .galery{
+      height: 80vh;
+    }
+    .galery-img{
+      margin-top: 4em;
+      height: 28em;
+      width: 52em;
+    }
+    .reservation{
+      gap: 10em;
+    }
+    
+  }
+  */
 
 
 
