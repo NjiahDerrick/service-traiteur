@@ -60,12 +60,12 @@ export default function Header() {
                       </div>
                   </div>  
                   <ul className='listlinkhamburger'>
-                        <li><Link to="#apropos" smooth="true">À propos</Link></li>
-                        <li><Link to="#servicetraiteur" smooth="true">Service Traiteur</Link></li> 
-                        <li><Link to="#menu" smooth="true">Galerie</Link></li>
-                        <li><Link to="#reservation" smooth="true">Réservation</Link></li>
-                        <li><Link to="#contact" smooth="true">Contact</Link></li>
-                        <li><Link className="header--cta2" to="#reservation"smooth="true">Reservez Maintenant</Link></li> 
+                        <li><Link to="#apropos" smooth="true" onClick={closeHamber}>À propos</Link></li>
+                        <li><Link to="#servicetraiteur" smooth="true" onClick={closeHamber}>Service Traiteur</Link></li> 
+                        <li><Link to="#menu" smooth="true" onClick={closeHamber}>Galerie</Link></li>
+                        <li><Link to="#reservation" smooth="true" onClick={closeHamber}>Réservation</Link></li>
+                        <li><Link to="#contact" smooth="true" onClick={closeHamber}>Contact</Link></li>
+                        <li><Link className="header--cta2" to="#reservation"smooth="true" onClick={closeHamber}>Reservez Maintenant</Link></li> 
                   </ul>
                 </div>
 
