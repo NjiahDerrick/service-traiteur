@@ -182,9 +182,9 @@ export default function Reservation() {
           <div>
               <label htmlFor="date" className="date--label">Date d'événement</label>
               <input 
-                  
                   type="date" 
                   className="eventDate" 
+                  placeholder='Date'
                   id='date' 
                   name='eventDate'
                   onChange={handleChange}
