@@ -44,6 +44,26 @@
       "eventType": "birthday",
       "localisation": "emana",
       "description": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "id": "4c33",
+      "name": "Njiah Derrick Tata",
+      "phone": "654035929",
+      "email": "tnjiah@gmail.com",
+      "eventType": "birthday",
+      "eventDate": "2024-07-11",
+      "localisation": "Obili",
+      "description": "ten people"
+    },
+    {
+      "id": "9bb4",
+      "name": "Jean dark",
+      "phone": "654035929",
+      "email": "tnjiah@gmail.com",
+      "eventType": "birthday",
+      "eventDate": "2024-07-21",
+      "localisation": "emana",
+      "description": "friends"
     }
   ]
 }

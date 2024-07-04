@@ -16,6 +16,7 @@ export default function Reservation() {
               phone: "", 
               email: "", 
               eventType: "",
+              eventDate: "",
               localisation: "",
               description: ""
           }
@@ -34,12 +35,13 @@ export default function Reservation() {
     }
 
 
+// 'https://cmchicken-backend.onrender.com/api/public/reservation/add'
       
         async function handleSubmit(event){
           event.preventDefault()
           setStatus("submitting")
                 try {
-                  const res = await fetch('https://cmchicken-backend.onrender.com/api/public/reservation/add' , {
+                  const res = await fetch('http://localhost:8000/data' , {
                       method:'POST',
                       headers: {
                           'Content-Type': 'application/json'
@@ -74,14 +76,25 @@ export default function Reservation() {
                       phone: "", 
                       email: "", 
                       eventType: "",
+                      eventDate: "",
                       localisation: "",
                       description: ""
                     })
                     
           }
 
-         
-
+          const Styles ={
+            width: "24.5em",
+            lineHeight: "10px",
+            height: "3em" ,
+            color: "#888888",
+            fontSize:  ".9em"  
+          }
+          const Styles2 ={
+            width: "24em",
+            lineHeight: "8px",
+            height: "3.5em"   
+          }
         
     
 
@@ -149,6 +162,7 @@ export default function Reservation() {
           <div>
               <label htmlFor="event" className="event--label">Type d'événement</label>
               <select 
+                    style={Styles2}
                     name="eventType" 
                     id="event"
                     value={formData.eventType}
@@ -162,6 +176,20 @@ export default function Reservation() {
                     <option value="funeral">Funéral</option>
                     <option value="others">Autre</option>
               </select>
+          </div>
+          <div>
+              <label htmlFor="date" className="date--label">Date d'événement</label>
+              <input 
+                  style={Styles}
+                  type="date" 
+                  className="eventDate" 
+                  placeholder="Date de l'événement"
+                  id='date' 
+                  name='eventDate'
+                  onChange={handleChange}
+                  value={formData.eventDate}
+                  required  
+              />
           </div>
           <div>
               <label htmlFor="location" className="location--label">Localisation</label>

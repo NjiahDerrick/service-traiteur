@@ -296,7 +296,7 @@ header nav{
   background-image: url("images/service--traiteur--bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 730px;
+  height: 760px;
   margin-bottom: 0px;
   text-align: center;
   margin-top: 3em;
@@ -327,14 +327,14 @@ header nav{
   
 }
 .reservation--info--imgs{
-  margin-top: 1em;
+  margin-top: 2em;
   position: relative;
  
 }
 
 .reservation--img1{
   width: 275.01px;
-  height: 394.99px;
+  height: 420.99px;
   position: relative;
   top: 1em;
   left: .3em;
@@ -346,7 +346,7 @@ header nav{
 
 .reservation--img2{
   width: 275.01px;
-  height: 394.4px;
+  height: 420.4px;
   position: absolute;
   top: .8em;
   left: .6em;
@@ -355,7 +355,7 @@ header nav{
 
 }
 .reservation--form{
-  height: 33.5em;
+  height: 37.5em;
   width: 22em;
   border-radius: 2em;
   margin-top: 1.2em;
@@ -369,7 +369,7 @@ header nav{
 .reservation--form > div{
   margin-top: .8em;
   margin-bottom: .8em;
-  color: #888888;;
+  color: #888888;
 }
 
 .reservation--form > div > input{
@@ -382,6 +382,7 @@ header nav{
   border: 1px solid #888888;
   cursor: pointer;
 }
+
 
 .reservation--form > div > select{
   border-radius: .6em;
