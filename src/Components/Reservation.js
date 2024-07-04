@@ -88,12 +88,14 @@ export default function Reservation() {
             lineHeight: "10px",
             height: "3em" ,
             color: "#888888",
-            fontSize:  ".9em"  
+            fontSize:  ".9em",
+            backgroundColor: "white" 
           }
           const Styles2 ={
             width: "24em",
             lineHeight: "8px",
-            height: "3.5em"   
+            height: "3.5em",
+            backgroundColor: "white"    
           }
         
     
