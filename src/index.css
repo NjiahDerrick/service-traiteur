@@ -311,9 +311,9 @@ header nav{
 }
 
 #date{
-  width: 24.5em;
+  width: 27em;
   line-height: 10px;
-  height: 3em;
+  height: 3.5em;
   background-color: white;
   color: #888888;
   /* font-size: .9em; */
@@ -1180,6 +1180,9 @@ header nav{
     .reservation--form > div > textarea{
       line-height: 16px;
       
+    }
+    #date{
+      line-height: 4px;
     }
     .service--traiteur--item{
       max-width: 16em;

@@ -185,7 +185,6 @@ export default function Reservation() {
                   
                   type="date" 
                   className="eventDate" 
-                  placeholder="Date de l'événement"
                   id='date' 
                   name='eventDate'
                   onChange={handleChange}
