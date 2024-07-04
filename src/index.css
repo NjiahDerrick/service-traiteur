@@ -309,10 +309,27 @@ header nav{
   gap: 7em;
   
 }
+
+#date{
+  width: 24.5em;
+  line-height: 10px;
+  height: 3em;
+  background-color: white;
+  color: #888888;
+  font-size: .9em;
+ }
+
 /* .reservation--info{
   height: 20em;
 
 } */
+ #event{
+  width: 24em;
+  line-height: 8px;
+  height: 3.5em;
+  background-color: white;
+ }
+ 
 
 .reservation--info--title--design1{
   color: #F93A47;

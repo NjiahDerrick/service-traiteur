@@ -83,20 +83,20 @@ export default function Reservation() {
                     
           }
 
-          const Styles ={
-            width: "24.5em",
-            lineHeight: "10px",
-            height: "3em" ,
-            color: "#888888",
-            fontSize:  ".9em",
-            backgroundColor: "white" 
-          }
-          const Styles2 ={
-            width: "24em",
-            lineHeight: "8px",
-            height: "3.5em",
-            backgroundColor: "white"    
-          }
+          // const Styles ={
+          //   width: "24.5em",
+          //   lineHeight: "10px",
+          //   height: "3em" ,
+          //   color: "#888888",
+          //   fontSize:  ".9em",
+          //   backgroundColor: "white" 
+          // }
+          // const Styles2 ={
+          //   width: "24em",
+          //   lineHeight: "8px",
+          //   height: "3.5em",
+          //   backgroundColor: "white"    
+          // }
         
     
 
@@ -164,7 +164,7 @@ export default function Reservation() {
           <div>
               <label htmlFor="event" className="event--label">Type d'événement</label>
               <select 
-                    style={Styles2}
+                    
                     name="eventType" 
                     id="event"
                     value={formData.eventType}
@@ -182,7 +182,7 @@ export default function Reservation() {
           <div>
               <label htmlFor="date" className="date--label">Date d'événement</label>
               <input 
-                  style={Styles}
+                  
                   type="date" 
                   className="eventDate" 
                   placeholder="Date de l'événement"
