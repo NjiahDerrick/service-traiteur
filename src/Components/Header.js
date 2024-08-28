@@ -70,17 +70,17 @@ export default function Header() {
                 </div>
 
                 <div className="hero--info">
-                  <div className="hero--text">
-                      <h1 className="hero--title">
-                          <span>CM Chicken</span> <br />
-                          <span className="sub--title">Service traiteur</span> 
-                      </h1>
-                      <p className="hero--details">
-                        Avez-vous un événement proche? alors nous<br />
-                        sommes le service traiteur qu'il vous faut!
-                      </p>
-                      <Link className="hero--cta" to="#reservation" smooth="true">Je veux reserver &rarr;</Link>
-                  </div>
+                    <div className="hero--text">
+                        <h1 className="hero--title">
+                            <span>CM Chicken</span> <br />
+                            <span className="sub--title">Service traiteur</span> 
+                        </h1>
+                        <p className="hero--details">
+                          Avez-vous un événement proche? alors nous<br />
+                          sommes le service traiteur qu'il vous faut!
+                        </p>
+                        <Link className="hero--cta" to="#reservation" smooth="true">Je veux reserver &rarr;</Link>
+                    </div>
                     <img src={heroImage} alt="hero image of section" className="hero--image" />
                 </div>
                 
